@@ -24,6 +24,16 @@ margin-bottom: 8px;
 color: black;
 }
 
+#links2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  color: black;
+  }
+
 #random-string {
   position: fixed;
   bottom: 0;
@@ -41,6 +51,12 @@ margin-bottom: 10px;
 color: black;
 }
 
+#links2 a {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+  }
+
 #logo {
   width: 100px;
   margin-top: 20px;
@@ -54,8 +70,9 @@ color: black;
 }
 
 .content {
-  margin-left: -225px;
+  margin-left: -214px;
   display: none;
+  margin-top: -50px;
 }
 
 .content h1 {
