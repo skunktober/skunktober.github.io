@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blank White Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="braille.js"></script>
+  </head>
+  <body>
+    <img src="l.png" alt="Your Image" id="logo">
+    <div id="links">
+      <a href="#" onclick="showContent('about-content')">About</a>
+      <a href="#" onclick="showContent('projects-content')">Projects</a>
+      <a href="#" onclick="showContent('contact-content')">Contact</a>
+    </div>
+    <div id="content">
+      <div id="about-content" class="content">
+        <h1>About</h1>
+        <p>This is the about page.</p>
+      </div>
+      <div id="projects-content" class="content">
+        <h1>Projects</h1>
+        <p>This is the projects page.</p>
+      </div>
+      <div id="contact-content" class="content">
+        <h1>Contact</h1>
+        <p>This is the contact page.</p>
+      </div>
+    </div>
+    <div id="canvas-container">
+      <pre id="canvas" style="color: #151515; white-space: pre; margin-bottom: 100px; margin-left: 350px;"></pre>
+    </div>
+    <div id="random-string"></div>
+    <script src="./donut.js"></script>
+  </body>
+</html>
