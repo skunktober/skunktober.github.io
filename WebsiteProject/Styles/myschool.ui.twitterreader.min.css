@@ -1,0 +1,3 @@
+#twitterreader li { font-size:1.1em; border-bottom: 1px solid gray;padding:6px 0 6px 0}
+.tweetdate{font-size:0.8em;font-weight:bold;padding-top:4px}
+#divTweetInputs_TwitterTweeter input[type="text"],#divTweetInputs_TwitterTweeter textarea{overflow:auto; width:190px;}
