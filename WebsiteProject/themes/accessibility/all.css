@@ -1,0 +1,101 @@
+body {
+    background-image: none;
+}
+
+body, #control-panel, #accordion, .accordion-heading, #add-favourite .add, .save-btn, .incorrect-details a, .add-widget, #create-rss input[type="submit"], #create-notice input[type="submit"], #font-sizer a.selected, .widgets-section {
+    background-color: #323232;
+}
+
+    .widget-content a, .school-crest, #nav a:hover, #nav a.selected, .clock-date .date, .current-conditions .txt .deg, #email.widget h3, #accordion .accordion-heading, .profile-details, #tab-head h1, .g-search input[type="submit"], .tabs-nav li.active a, .lightbox-help, #lightbox-wrap h1, .f-close {
+        color: #ff0;
+    }
+
+        #nav a, #alerts, .widget-head h2, .widget-content, .current-conditions, .clock-date .month-year, .current-conditions .txt .condition, .rss-item a, .rss-item h3, .rss-item p, .rss-item .date, .urgent-alert, .urgent-alert .alert-by, .tab-edit a, #email em, #accordion a.selected, .accordion-heading .accordion-heading-num, #accordion a, #control-panel, #accordion, .accordion-heading, #add-favourite .add, .save-btn, .incorrect-details a, .add-widget, #create-rss input[type="submit"], #create-notice input[type="submit"], #font-sizer a.selected, .profile-details strong, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, #profile strong, #lightbox-wrap, #profile span, #lightbox-wrap h2, .badge-name, .your-badge .badge-name span, .tabs-nav a, .tabs-nav li.active a span, .theme, .current-badge, .clock-date {
+            color: #00e1e8;
+        }
+
+        #lightbox-left-inner, #lightbox-left, .lightbox-help span, #alerts, .widget-content, .urgent-alert {
+            background: 0;
+        }
+
+#alerts, .widget-content, .urgent-alert {
+    background-color: #000;
+    border-color: #000;
+}
+
+.widget-head {
+    background-image: none;
+}
+
+.urgent-alert {
+    width: 196px;
+    border: 1px solid #fff;
+}
+
+#create-notice input[type="text"], #create-notice textarea, .validation.warning, .validation.success, .validation.error, .g-search input[type="text"], .g-search input[type="submit"], #create-notice .noticeTable select, .ui-widget-header, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background-color: #000;
+    border-color: #fff;
+}
+
+#header-wrap, #control-panel, #accordion, .accordion-heading, #add-favourite .add, .save-btn, .incorrect-details a, #header-wrap, .widget-head, #lightbox-wrap, .tabs-nav span, .create-rss-widget, .lightbox-help span, .ui-widget-header {
+    background-color: #1a1a1a;
+}
+
+.widget-head, #lightbox-wrap, .tabs-nav span, .theme, .current-badge, .tabs-nav li a, .tabs-nav li.active a, #lightbox-right, #add-favourite input[type="text"] {
+    background: 0;
+    background-color: #000;
+}
+
+.g-search input[type="text"] {
+    border: 1px solid #fff;
+    border-right: none 0;
+}
+
+.widget-head a.edit, .widget-head a.collapse, .widget-head a.remove, .widget-head a.help, .alerts-nav a, #alerts-next, .launch-new-window {
+    background-image: url("../images/buttons.png");
+}
+
+#accordion a, .accordion-content {
+    border-top: 1px solid #fff;
+}
+
+#accordion li a, #accordion #view-all-apps, #accordion .view-full-timetable, #accordion #edit-favourites {
+    border: 0;
+}
+
+.theme {
+    border-color: #555;
+}
+
+#add-favourite input[type="text"] {
+    border: 1px solid #fff;
+}
+
+#fancybox-close {
+    background-image: url("../images/fancybox/fancybox-close.png");
+}
+
+#auppic {
+    background-position: 30px 0;
+}
+
+#footer, #footer #aup {
+    color: #fff;
+}
+/*Style sheet for Password Expiry alert content Index.aspx page.*/
+.password-expiry-notification {
+    text-align: center;
+    width: 100%;
+    border: 2px double #ffff00;
+    background-color: #000000;
+    margin-top: 5px;
+    padding-top: 5px; 
+    font-weight: bold;
+    margin-left: -5px;
+    float: left;
+    color:#FFff00 !important;
+}
+ .password-expiry-notification  a {
+    color:#FFff00 !important;
+    text-decoration: underline;
+    }
