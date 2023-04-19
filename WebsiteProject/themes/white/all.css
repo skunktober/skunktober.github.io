@@ -1,0 +1,33 @@
+body {
+    background: #101010 url("bg.jpg") no-repeat center 0 fixed;
+    color: #000;
+    -webkit-background-size: 110% auto;
+    -moz-background-size: 110% auto;
+    -o-background-size: 110% auto;
+    background-size: 110% auto;
+}
+
+.widget-head {
+    background-color: #b8b8b8;
+    background-image: none;
+}
+
+#header-wrap, #lightbox-wrap, .tabs-nav span, .create-rss-widget, .lightbox-help span, .ui-widget-header, #external-app-bar {
+    background-color: #a0a0a0;
+}
+
+#control-panel, #accordion, .accordion-heading, #add-favourite .add, .save-btn, .incorrect-details a, .add-widget, #create-rss input[type="submit"], #create-notice input[type="submit"], #font-sizer a.selected, .f-ok, .f-close {
+    background-color: #999999;
+}
+
+#auppic {
+    background-position: 0 0;
+}
+
+#footer, #footer #aup {
+    color: #000000;
+}
+
+#tab-head h1 {
+    color: #000000;
+}

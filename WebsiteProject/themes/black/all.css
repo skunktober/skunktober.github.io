@@ -1,0 +1,59 @@
+body {
+    background: #101010 url("bg.jpg") no-repeat center 0 fixed;
+    color: #000;
+    -webkit-background-size: 110% auto;
+    -moz-background-size: 110% auto;
+    -o-background-size: 110% auto;
+    background-size: 110% auto;
+}
+
+.validation {
+    color: #000;
+}
+
+.widget-head {
+    background-color: #5f5f5f;
+    background-image: none;
+}
+
+.widget-content {
+    border-color: #323232;
+    background-color: transparent;
+}
+
+.widget-content, .theme, #email em, #lightbox-wrap h2, #email.widget h3, .lightbox-help, .badge-name, .your-badge .badge-name span, #profile span, #lightbox-wrap, .current-badge, .g-search input[type="submit"] {
+    color: #a8a8a8;
+}
+
+.widget {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #424242;
+    background: -moz-linear-gradient(-65deg,#424242 0,#2c2c2c 100%);
+    background: -webkit-gradient(linear,left top,right bottom,color-stop(0%,#424242),color-stop(100%,#2c2c2c));
+    background: -webkit-linear-gradient(-65deg,#424242 0,#2c2c2c 100%);
+    background: -o-linear-gradient(-65deg,#424242 0,#2c2c2c 100%);
+    background: -ms-linear-gradient(-65deg,#424242 0,#2c2c2c 100%);
+    background: linear-gradient(-65deg,#424242 0,#2c2c2c 100%);
+}
+
+#header-wrap, #lightbox-wrap, .tabs-nav span, .create-rss-widget, .lightbox-help span, .ui-widget-header, #external-app-bar {
+    background-color: #111111;
+}
+
+#control-panel, #accordion, .accordion-heading, #add-favourite .add, .save-btn, .incorrect-details a, .add-widget, #create-rss input[type="submit"], #create-notice input[type="submit"], #font-sizer a.selected, .f-ok, .f-close {
+    background-color: #2c2c2c;
+}
+
+#auppic {
+    background-position: 0 0;
+}
+
+#footer, #footer #aup {
+    color: #ffffff;
+}
+
+#tab-head h1 {
+    color: #ffffff;
+}
