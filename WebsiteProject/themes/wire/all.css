@@ -8,7 +8,7 @@ body {
 }
 
 .widget-head {
-    background-color: #F14112;
+    background-color: #9900ff;
     background-image: none;
 }
 
@@ -25,11 +25,11 @@ body {
 }
 
 #footer, #footer #aup {
-    color: #FA4808;
+    color: #6400A0;
 }
 
 #tab-head h1 {
-    color: #F14112;
+    color: #9900ff;
 }
 /*Style sheet for Password Expiry alert content Index.aspx page.*/
 .password-expiry-notification {
