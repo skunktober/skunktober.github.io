@@ -1,4 +1,4 @@
-﻿var PopulateartpadData = {
+﻿var artpad = {
 
     WCFServiceUrl: "",
 
@@ -85,3 +85,5 @@
         }
     } //End init
 };
+
+artpad.Init();

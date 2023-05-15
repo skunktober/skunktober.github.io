@@ -76,6 +76,7 @@
 .app-modify-user-interface,.widget-details span.modify-user-interface{background-image:url("../images/app-icons/modify-user-interface.png");}
 .app-mondrian-wall,.widget-details span.mondrian-wall{background-image:url("../images/app-icons/mondrian-wall.png");}
 .app-chatgpt,.widget-details span.chatgpt{background-image:url("../images/app-icons/chatgpt.png");}
+.app-bard,.widget-details span.bard{background-image:url("../images/app-icons/google-bard.png");}
 .app-geoguessr,.widget-details span.geoguessr{background-image:url("../images/app-icons/geoguessr.png");}
 .app-moodle,.widget-details span.moodle{background-image:url("../images/app-icons/moodle.png");}
 .app-my-apps,.widget-details span.my-apps {background-image:url("../images/app-icons/my-apps.png");}
@@ -89,6 +90,8 @@
 .app-nila,.widget-details span.nila{background-image:url("../images/app-icons/nila.png");}
 .app-nina,.widget-details span.nina{background-image:url("../images/app-icons/nina.png");}
 .app-office365,.widget-details span.office365{background-image:url("../images/app-icons/office365.png");}
+.app-neal,.widget-details span.neal{background-image:url("../images/app-icons/neal.png");}
+.app-slope,.widget-details span.slope{background-image:url("../images/app-icons/slope.png");}
 .app-Just2easy,.widget-details span.Just2easy{background-image:url("../images/app-icons/j2e.png");}
 /*SI0461 - Catalogue*/
 .app-catalogue,.widget-details span.catalogue{background-image:url("../images/app-icons/catalogue.png");}

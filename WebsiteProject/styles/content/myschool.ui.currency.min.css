@@ -1,0 +1,9 @@
+#CurrencyTo,#CurrencyFrom{width:98%}#currency label{float:left;width:190px}
+#currency ul{float:left;width:190px;margin-bottom:10px}
+#currency li{float:left;width:190px}
+#currency li label{float:left;width:100px}
+#currency input[type="text"],#currency textarea{width:178px;}
+.currencyTable{float:left;width:190px}.currencyTable td{vertical-align:top;padding-bottom:5px}
+#currency .currencyTable input[type="text"]{width:80px;}
+.currencyTable span{float:left;margin-right:3px}
+#result { display: inline-block; padding-top:5px; }

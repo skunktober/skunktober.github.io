@@ -78,3 +78,7 @@ var PopulateclockData = {
 
     }
 })(jQuery);
+
+$(document).ready(function() {
+    $('#javascript-clock').jsRapClock();
+});
