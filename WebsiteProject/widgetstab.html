@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/content/myschool.ui.calculator.min.css" />
     <link rel="stylesheet" href="styles/content/myschool.ui.wiki.min.css" />
     <link rel="stylesheet" href="styles/content/myschool.ui.metrics.min.css" />
+    <link rel="stylesheet" href="styles/content/myschool.ui.weather.min.css" />
     <script src="scripts/content/myschool.ui.currency.js"></script>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/jquery.tallest.js"></script>
@@ -28,6 +29,7 @@
     <script src="scripts/jquery.fancybox-1.3.4.pack.js"></script>
     <script src="scripts/content/myschool.ui.wiki.js"></script>
     <script src="scripts/content/myschool.ui.calculator.js"></script>
+    <script src="scripts/content/myschool.ui.weather.js"></script>
     <script src="scripts/content/myschool.ui.metrics.js"></script>
     <script src="scripts/content/myschool.ui.currency.js"></script>
     <script src="scripts/htmlEncode.js"></script>
@@ -112,7 +114,7 @@
                 </div>
 
                 <ul id="nav">
-                    <li><a class="" role="tab" data-tabid="2" data-tabname="MyHome" href="r2k.html"
+                    <li><a class="" role="tab" data-tabid="2" data-tabname="MyHome" href="index.html"
                             title="MyHome">MyHome</a></li>
                     <li><a class=" selected" role="tab" data-tabid="882771" data-tabname="Widgets"
                             href="widgetstab.html" title="Widgets">Widgets</a></li>
@@ -287,6 +289,46 @@
                                 </div>
                             </div><span class="widget-btm"></span>
                         </li>
+                        <li class="widget widget-single  masonry-brick" id="weather" data-widgetid="1137147" data-pid="41" data-cat="Weather"
+                            data-title="weather" data-widgetcontentid="32" style="position: absolute; top: 0px; left: 480px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;">
+                                    <h2>Weather</h2><a id="help30" href="#help32content" class="help" title="Click for help"
+                                        style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help32content" class="helptext">
+                                            <h2>Weather Help</h2>
+                                            <p>This widget reports the latest weather conditions for the local area.<br><br>The information is
+                                                obtained from an external internet-based service.</p>
+                                            <p>This widget was re-coded by <a href="https://github.com/vlri4/">vlri4</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="778617Content1137147">
+                                <div class="current-conditions">
+                                    <img class="weather-img" src="NaN" alt="Today's weather" />
+                                    <p class="txt">Current Conditions<br><span class="deg">NaN&deg;C</span><br><span
+                                            class="condition">undefined</span></p>
+                                </div>
+                                <div class="forecast">
+                                    <p>Forecast</p>
+                                    <div class="forecast-day">
+                                        <strong>NaN</strong>
+                                        <span class="forecast-conditions">NaN</span><br>
+                                        High: NaN&deg;C<br>
+                                        Low: NaN&deg;C
+                                    </div>
+                                    <div class="forecast-day">
+                                        <strong>NaN</strong>
+                                        <span class="forecast-conditions">NaN</span><br>
+                                        High: NaN&deg;C<br>
+                                        Low: NaN&deg;C
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="widget-btm"></span>
+                        </li>
                         <li class="widget widget-double  masonry-brick" id="metrics" data-widgetid="1093305" data-pid="0" data-cat=""
                             data-title="metrics" data-widgetcontentid="74" style="position: absolute; top: 514px; left: 0px;">
                             <div class="widget-head-wrap" data-collapsed="large">
@@ -300,6 +342,7 @@
                                                 another metric.<br><br>You can convert various Length, Temperature, Weight and Volume
                                                 metrics.<br><br>Choose the From and To metrics, enter a Value, and then click the Convert button
                                                 to view the result of the conversion.</p>
+                                            <p>This widget was re-coded by <a href="https://github.com/vlri4/">vlri4</a>.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -523,6 +566,40 @@
                                 rel="external" class="launch-new-window" data-pid="59" data-wid="676"
                                 title="Launch Papercut" data-oib="False">Open</a>
                         </li>
+                        <li class="widget widget-single  masonry-brick" id="todolist" data-widgetid="1121468" data-pid="0" data-cat=""
+                            data-title="todolist" data-widgetcontentid="886" style="position: absolute; top: 496px; left: 480px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;">
+                                    <h2>Todo List</h2><a id="help886" href="#help886content" class="help" title="Click for help"
+                                        style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help886content" class="helptext">
+                                            <h2>Todo List Help</h2>
+                                            <p>This widget lets you create a list of up to 30 To-Do tasks. You can check
+                                                tasks as complete, or delete as necessary.</p>
+                                            <p>This widget was re-coded by <a href="https://github.com/vlri4/">vlri4</a>.</p>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <div class="widget-content" id="897732Content1121468">
+                                <div id="add-todo">
+                                    <ul class="todobox">
+                                        <li><label for="todo_newitem" title="Enter Todo" class="overlay"></label><input type="text"
+                                                id="todo_newitem" placeholder="Enter Todo..." title="Enter Todo..."><input type="button"
+                                                id="todo_add" value="Add item"></li>
+                                    </ul>
+                                </div>
+                                <ul id="todolistitems" style="display: block;">
+                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done" value="true" checked="">
+                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
+                                            </div>
+                                        </div><a class="todo_delete" class="link_delete" href="#">x</a>
+                                    </li>
+                                </ul>
+                            </div><span class="widget-btm"></span>
+                        </li>
                         <li class="widget widget-double  masonry-brick" id="artpad" data-widgetid="1121267" data-pid="0"
                             data-cat="" data-title="artpad" data-widgetcontentid="458"
                             style="position: absolute; top: 0px; left: 0px;">
@@ -594,76 +671,6 @@
                                 </div><!--/canvas_actual-->
                                 <form action="ImageHandler.ashx?download=true" method="post" id="frm"> <input
                                         type="hidden" name="data" id="data"> </form>
-                            </div><span class="widget-btm"></span>
-                        </li>
-                        <li class="widget widget-single  masonry-brick" id="todolist" data-widgetid="1121468"
-                            data-pid="0" data-cat="" data-title="todolist" data-widgetcontentid="886"
-                            style="position: absolute; top: 369px; left: 480px;">
-                            <div class="widget-head-wrap" data-collapsed="large">
-                                <div class="widget-head" style="cursor: move;">
-                                    <h2>Todo List</h2><a id="help886" href="#help886content" class="help"
-                                        title="Click for help" style="display: none;">Help</a>
-                                    <div style="display:none;">
-                                        <div id="help886content" class="helptext">
-                                            <h2>Todo List Help</h2>
-                                            <p>This widget lets you create a list of up to 30 To-Do tasks. You can check
-                                                tasks as complete, or delete as necessary</p>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="widget-content" id="897732Content1121468">
-                                <div id="add-todo">
-                                    <ul class="todobox">
-                                        <li><label for="todo_newitem" title="Enter Todo" class="overlay"></label><input
-                                                type="" id="todo_newitem" maxlength="0" title="Enter Todo..."><input
-                                                type="button" id="todo_add" value="Add item"></li>
-                                    </ul>
-                                </div>
-                                <ul id="todolistitems" style="display: block;">
-                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done"
-                                            value="true" checked="">
-                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
-                                            </div>
-                                        </div><a id="todo_delete" class="link_delete" href="#">x</a>
-                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done"
-                                            value="true" checked="">
-                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
-                                            </div>
-                                        </div><a id="todo_delete" class="link_delete" href="#">x</a>
-                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done"
-                                            value="true" checked="">
-                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
-                                            </div>
-                                        </div><a id="todo_delete" class="link_delete" href="#">x</a>
-                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done"
-                                            value="true" checked="">
-                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
-                                            </div>
-                                        </div><a id="todo_delete" class="link_delete" href="#">x</a>
-                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done"
-                                            value="true" checked="">
-                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
-                                            </div>
-                                        </div><a id="todo_delete" class="link_delete" href="#">x</a>
-                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done"
-                                            value="true" checked="">
-                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
-                                            </div>
-                                        </div><a id="todo_delete" class="link_delete" href="#">x</a>
-                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done"
-                                            value="true" checked="">
-                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
-                                            </div>
-                                        </div><a id="todo_delete" class="link_delete" href="#">x</a>
-                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done"
-                                            value="true" checked="">
-                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
-                                            </div>
-                                        </div><a id="todo_delete" class="link_delete" href="#">x</a>
-                                    </li>
-                                </ul>
                             </div><span class="widget-btm"></span>
                         </li>
                         <li class="widget widget-double  masonry-brick" id="artpad" data-widgetid="1121267" data-pid="0"
