@@ -1,0 +1,87 @@
+body {
+    background: #fff url("bg.jpg") no-repeat center 0 fixed;
+    color: #000;
+    -webkit-background-size: 110% auto;
+    -moz-background-size: 110% auto;
+    -o-background-size: 110% auto;
+    background-size: 110% auto;
+}
+
+#header-wrap, #lightbox-wrap, .tabs-nav span, .create-rss-widget, .lightbox-help span, .ui-widget-header, #external-app-bar {
+    background-color: #80bcd6;
+}
+
+#control-panel, #accordion, .accordion-heading, #add-favourite .add, .save-btn, .incorrect-details a, .add-widget, #create-rss input[type="submit"], #create-notice input[type="submit"], #font-sizer a.selected, .f-ok, .f-close {
+    background-color: #6696ab;
+}
+
+.widget-content {
+    width: 192px;
+    border: 0;
+    box-shadow: 4px 0 4px -4px rgba(0,0,0,0.2),-4px 0 4px -4px rgba(0,0,0,0.2);
+    background: url("widget-bgj.png") repeat-y 0 0;
+    padding-bottom: 0;
+}
+
+.widget-btm {
+    display: block;
+    width: 222px;
+    height: 13px;
+    background: url("widget-btmj.png") no-repeat 0 0;
+}
+
+.widget-head {
+    background-image: none;
+    background-color: #e755a8;
+}
+
+.widget-double .widget-content {
+    background-image: url("widget-bg-doublej.png");
+}
+
+.widget-double .widget-btm {
+    width: 462px;
+    background-image: url("widget-btm-doublej.png");
+}
+
+.widget-triple .widget-content {
+    background-image: url("widget-bg-triplej.png");
+}
+
+.widget-triple .widget-btm {
+    width: 702px;
+    background-image: url("widget-btm-triplej.png");
+}
+
+.launch-new-window {
+    bottom: -10px;
+}
+
+#calculator .widget-content {
+    padding-bottom: 0;
+}
+
+#auppic {
+    background-position: 75px 0;
+}
+
+#footer, #footer #aup, #tab-head h1 {
+    color: #6696ab;
+}
+/*Style sheet for Password Expiry alert content Index.aspx page.*/
+.password-expiry-notification {
+    text-align: center;
+    width: 100%;
+    border: 2px double #ff0000;
+    background-color: #ffffff;
+    margin-top: 5px;
+    padding-top: 5px; 
+    font-weight: bold;
+    margin-left: -5px;
+    float: left;
+    color:#FF0000 !important;
+}
+ .password-expiry-notification  a {
+    color:#FF0000 !important;
+    text-decoration: underline;
+    }
