@@ -1,0 +1,88 @@
+.weather-img {
+    float: left;
+    display: block;
+    width: 82px;
+    height: 79px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.txt {
+    text-align: center;
+    float: right;
+    width: 80px;
+    font-size: .9em
+}
+
+.current-conditions {
+    color: #7d7c7c
+}
+
+.current-conditions .txt {
+    width: 100px
+}
+
+.clock-date .date,
+.current-conditions .txt .deg {
+    display: inline-block;
+    font-size: 3.0em;
+    font-weight: bold;
+    padding: 16px 0 14px 0
+}
+
+.clock-date .month-year,
+.current-conditions .txt .condition {
+    font-size: 1.1em
+}
+
+.forecast {
+    float: left;
+    width: 190px;
+    font-size: .9em
+}
+
+.forecast ul {
+    width: 190px;
+    list-style-type: none
+}
+
+.forecast li {
+    width: 90px;
+    float: left;
+    font-size: 1.2em
+}
+
+.forecast div {
+    float: left;
+    width: 90px;
+    font-size: 1.0em
+}
+
+.forecast-day {
+    display: inline-block;
+    width: 40%;  /* adjusted from 45% to slightly move the second day's condition, high, and low to the left */
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;  /* added to center text */
+}
+
+.forecast-day:first-child .forecast-details {
+    padding-left: 5px;
+}
+
+.forecast-day:last-child .forecast-details {
+    padding-left: 13px;
+}
+
+.forecast-day strong {
+    display: block;
+    font-size: 1.2em;  /* adjusted to match .forecast li */
+    margin-bottom: 5px;
+}
+
+.forecast-details {
+    text-align: left;
+    display: block;
+    padding-left: 5px;
+}
+
