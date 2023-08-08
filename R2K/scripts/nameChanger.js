@@ -48,8 +48,11 @@ function loadName() {
 
 function setName() {
   const nameInput = document.getElementById('name-input');
-  const customName = nameInput.value;
+  let customName = nameInput.value;
   if (customName) {
+    if (customName.length > 50) {
+      customName = customName.substring(0, 50);
+    }
     saveName(customName);
     updateNameOnPage(customName);
     console.log('Name submitted:', customName);
