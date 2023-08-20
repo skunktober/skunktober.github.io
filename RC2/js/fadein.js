@@ -14,6 +14,9 @@ $(document).ready(function() {
             targetDiv = '#widgets';
       } else if (currentPage === 'settings.html') {
           targetDiv = '#settings';
+      } else {
+          // if no html link, target the content div
+          targetDiv = '#content';
       }
 
       // Fade in the target div
