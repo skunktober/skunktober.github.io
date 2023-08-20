@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: url("../images/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#banner {
+    background-color: #232323;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /* Freeze the banner in place */
+    width: 100%;
+    /* Make the banner take the full width of the viewport */
+    top: 0;
+    /* Stick the banner to the top of the viewport */
+    z-index: 1;
+    /* Ensure the banner appears above other elements */
+    flex: 0 0 auto
+}
+
+#banner h1 {
+    margin: 0;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: 0 0 auto
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#sidebar {
+    background-color: #232323;
+    color: #ffffff;
+    padding: 20px;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    transition: width 0.3s ease;
+    z-index: 2;
+    flex: 0 0 auto
+}
+
+#content {
+    margin-top: 300px;
+    margin-left: 140px;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    transition: font-size 0.3s ease;
+    opacity: 0;
+}
+
+#content h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#content .placeholder {
+    font-family: "Inter", sans-serif;
+    animation: gentleShake 10s infinite;
+}
+
+#settings {
+    margin-top: 175px;
+    margin-left: 175px;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    transition: font-size 0.3s ease;
+    opacity: 0;
+}
+
+#settings h2 {
+    margin-bottom: 5px;
+}
+
+#apps {
+    margin-top: 140px;
+    margin-left: 140px;
+    padding: 20px;
+    color: #FFFFFF;
+    transition: font-size 0.3s ease;
+    opacity: 0;
+}
+
+#apps h2 {
+    margin-bottom: 20px;
+}
+
+.app-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.app-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    flex: 0 0 auto
+}
+
+.app-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app-info {
+    display: flex;
+    align-items: center;
+}
+
+.app-name {
+    flex: 1;
+    font-family: 'Inter', sans-serif;
+    /* Use the Inter font for app name */
+}
+
+.rounded-button {
+    margin-left: 10px;
+    /* Add this line to move the launch button to the left */
+    border-radius: 20px;
+    background-color: #232323;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    /* Use the Inter font for button text */
+}
+
+.launch-button {
+    padding-right: 1400px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 8px;
+    margin-right: 25px;
+    margin-top: 2px;
+    flex: 0 0 auto
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar-btn {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #232323;
+    color: #ffffff;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: 2px solid black;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex: 0 0 auto
+}
+
+#sidebar:hover {
+    width: 175px;
+}
+
+.sidebar-btn:hover {
+    background-color: #ffffff;
+    color: #232323;
+}
+
+#sidebar #logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0.2;
+    flex: 0 0 auto
+}
+
+.btn-click-animation {
+    animation: clickAnimation 0.2s ease;
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.colorful {
+    transition: background-color 0s ease, color 0s ease;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="text"]::placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+button.save-button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #232323;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+button.save-button:hover {
+    background-color: #f0f0f0;
+}
+
+button.save-button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+    /* Black text */
+    font-family: 'Inter', sans-serif;
+    /* Use the Inter font */
+    cursor: pointer;
+}
+
+button.save-button:hover {
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.prerelease {
+    display: inline-block;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0045ed, #bd48ff);
+    padding: 5px 15px;
+    margin-left: 1600px;
+    flex: 0 0 auto
+}
+
+.prerelease p {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    flex: 0 0 auto
+}
+
+.sidebar-btn-inverted {
+    color: #232323;
+    background-color: #ffffff;
+}
+
+.sidebar-btn-inverted:hover {
+    color: #ffffff;
+    background-color: #232323;
+}

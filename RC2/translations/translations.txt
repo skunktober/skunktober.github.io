@@ -1,0 +1,31 @@
+DEVELOPER
+RELEASE
+PRERELEASE
+BETA
+ALPHA
+BUILD
+Hi there. 
+It's currently <day>.
+The time is <time>.
+Custom Avatar
+Custom Background
+Custom Banner Color
+Custom Sidebar Color
+Invert Buttons
+Invert Text
+Save
+Reset
+Enter image URL
+Enter hex color code
+Notepad / Note Pad
+SketchPad / Sketch Pad
+Clear
+Open
+New todo...
+Coming Soon
+In Development
+Add
+You can't run RC2 locally.
+RC2's functions and elements are not compatible with local versions.
+Please consider running RC2 through a local server, or using the official version here.
+If you think you're incorrectly seeing this message, please create an issue report here.
