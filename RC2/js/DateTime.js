@@ -13,7 +13,7 @@ async function getIPAddress() {
 // Function to get user's timezone based on their IP address using World Time API
 async function getTimezoneFromIP(ipAddress) {
 try {
-  const response = await fetch(`http://worldtimeapi.org/api/ip/${ipAddress}.json`);
+  const response = await fetch(`https://worldtimeapi.org/api/ip/${ipAddress}.json`);
   const data = await response.json();
   return data; // Returning full data instead of data.data.timezone
 } catch (error) {
