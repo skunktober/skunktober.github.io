@@ -1,0 +1,95 @@
+body {
+    background: #fff url("bg.jpg") no-repeat center 0 fixed;
+    color: #000;
+    -webkit-background-size: 110% auto;
+    -moz-background-size: 110% auto;
+    -o-background-size: 110% auto;
+    background-size: 110% auto;
+}
+
+#header-wrap, #lightbox-wrap, .tabs-nav span, .create-rss-widget, .lightbox-help span, .ui-widget-header, #external-app-bar {
+    background-color: #94c4e2;
+}
+
+#control-panel, #accordion, .accordion-heading, #add-favourite .add, .save-btn, .incorrect-details a, .add-widget, #create-rss input[type="submit"], #create-notice input[type="submit"], #font-sizer a.selected, .f-ok, .f-close {
+    background-color: #6696ab;
+}
+
+.widget-content {
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none 0;
+}
+
+.widget-head {
+    color: black;
+    width: 202px;
+    padding: 22px 10px 4px 10px;
+    overflow: hidden;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-bottom: 0;
+    background: url("widget-top.png") no-repeat 0 0 !important;
+}
+
+.widget-content {
+    padding: 10px 15px 16px 15px;
+}
+
+.widget-head.widget-collapsed {
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.widget-head a.collapse {
+    margin-top: 2px;
+}
+
+.widget-double .widget-head {
+    width: 462px;
+    background: url("widget-top-double.png") no-repeat 0 0 !important;
+}
+
+.widget-double .widget-btm {
+    width: 462px;
+    background: url("widget-btm-double.png") no-repeat 0 0;
+}
+
+.widget-triple .widget-head {
+    width: 702px;
+    background: url("widget-top-triple.png") no-repeat 0 0 !important;
+}
+
+.widget-triple .widget-btm {
+    width: 702px;
+    background: url("widget-btm-triple.png") no-repeat 0 0;
+}
+/*Style sheet for Password Expiry alert content Index.aspx page.*/
+.password-expiry-notification {
+    text-align: center;
+    width: 100%;
+    border: 2px double #ff0000;
+    background-color: #ffffff;
+    margin-top: 5px;
+    padding-top: 5px; 
+    font-weight: bold;
+    margin-left: -5px;
+    float: left;
+    color:#FF0000 !important;
+}
+ .password-expiry-notification  a {
+    color:#FF0000 !important;
+    text-decoration: underline;
+    }

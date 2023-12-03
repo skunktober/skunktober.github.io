@@ -1,0 +1,430 @@
+﻿html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+a,
+img,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal
+}
+
+input[type=button],
+input[type=submit],
+button {
+    cursor: pointer
+}
+
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased
+}
+
+body {
+    font: 62.5%/1.7 Arial, Helvetica, sans-serif;
+    height: 100%;
+    color: #7d7c7c;
+    background-color: #e7e7e7;
+    background-image: none
+}
+
+body.font-size-small {
+    font-size: 78.5%
+}
+
+body.font-size-medium {
+    font-size: 82.5%
+}
+
+body.font-size-large {
+    font-size: 92.5%
+}
+
+body.font-size-very-large {
+    font-size: 102.5%
+}
+
+p {
+    padding-bottom: 1em
+}
+
+a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.app-launcher {
+    margin-top: 76px
+}
+
+#lightbox-wrap {
+    float: left;
+    color: #626262;
+    width: 940px;
+    font-size: 1.2em
+}
+
+#lightbox-wrapstandalone {
+    float: left;
+    width: 940px;
+    background-color: #f6f6f6;
+    font-size: 1.2em
+}
+
+#lightbox-left {
+    float: left;
+    width: 212px;
+    background: url("../images/lightbox-left-bg.png") no-repeat 0 bottom
+}
+
+#lightbox-left-inner {
+    float: left;
+    width: 212px;
+    height: 580px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 63px;
+    top: 482px;
+}
+
+#lightbox-right {
+    float: right;
+    position: relative;
+    width: 660px;
+    height: 556px;
+    padding: 24px 34px 0 34px;
+    background-color: #f6f6f6
+}
+
+#lightbox-right.user-details {
+    float: left;
+    width: 660px;
+    height: 330px;
+    padding-top: 24px
+}
+
+#lightbox-right.add-widgets-wrapper {
+    height: 580px;
+    padding: 0 34px 0 34px
+}
+
+#lightbox-wrap h1,
+#lightbox-wrapstandalone h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 27px 0 22px 17px;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.2)
+}
+
+#lightbox-wrap h2,
+#lightbox-wrapstandalone h2 {
+    color: #626262;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px
+}
+
+#tab200 h2 {
+    margin-top: 0px
+}
+
+.tabs-nav {
+    float: left;
+    width: 212px
+}
+
+.tabs-nav li {
+    float: left;
+    width: 212px;
+    margin-bottom: 1px
+}
+
+.tabs-nav a {
+    float: left;
+    position: relative;
+    display: block;
+    font-weight: bold;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
+    width: 195px;
+    padding: 10px 0 10px 17px;
+    background: url("../images/overlay-50.png") repeat
+}
+
+.tabs-nav li.active a {
+    text-shadow: none;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+    background-image: -webkit-linear-gradient(top, #fff, #dcdcdc);
+    background-image: -moz-linear-gradient(top, #fff, #dcdcdc);
+    background-image: -ms-linear-gradient(top, #fff, #dcdcdc);
+    background-image: -o-linear-gradient(top, #fff, #dcdcdc);
+    background-image: linear-gradient(to bottom, #fff, #dcdcdc)
+}
+
+.tabs-nav li.active a:hover {
+    background-color: #fff
+}
+
+.tabs-nav span {
+    position: absolute;
+    right: 7px;
+    top: 9px;
+    display: inline-block;
+    padding: 1px 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1)
+}
+
+.tabs-nav li.active a span {
+    color: #fff
+}
+
+.lightbox-section {
+    float: left;
+    width: 660px;
+    padding-bottom: 34px
+}
+
+.lightbox-section select {
+    font-size: 1em;
+    color: #626262
+}
+
+.choose-widget {
+    float: left;
+    width: 220px;
+    height: 128px
+}
+
+.widget-details {
+    float: right;
+    width: 220px;
+    padding-bottom: 10px
+}
+
+.widget-details span {
+    float: left;
+    width: 58px;
+    height: 58px;
+    display: block;
+    background: url("../images/app-btns.png") no-repeat 0 0
+}
+
+.widget-details p {
+    float: left;
+    padding-left: 8px;
+    font-size: .9em;
+    width: 130px;
+    word-wrap: break-word;
+    overflow: hidden
+}
+
+.widget-details strong {
+    font-size: 1.3em
+}
+
+.launch-app-button {
+    font-size: .9em;
+    font-weight: bold;
+    float: left;
+    display: inline-block;
+    padding: 0 16px 0 11px;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    border-radius: 13px;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.2);
+    background-color: #3ba8df
+}
+
+.launch-app-button span {
+    display: inline-block;
+    padding: 5px 4px 5px 9px
+}
+
+.lightbox-help {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    color: #565656;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.lightbox-help span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: #fff;
+    margin-right: 8px;
+    background: url("../images/buttons.png") no-repeat -145px -300px
+}
+
+.choose-widget-wrapper,
+.badges-wrapper,
+.themes-wrapper {
+    float: left;
+    width: 660px;
+    height: 370px;
+    position: relative;
+    margin-bottom: 50px
+}
+
+.slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100
+}
+
+.slide,
+.badges-wrapper .slide {
+    float: left;
+    width: 660px;
+    height: 375px
+}
+
+.slides_container {
+    width: 660px;
+    overflow: hidden;
+    position: relative
+}
+
+.slides .next,
+.slides .prev {
+    position: absolute;
+    bottom: -6px;
+    left: 220px;
+    width: 26px;
+    height: 27px;
+    display: block;
+    z-index: 101
+}
+
+.slides .next {
+    left: 412px
+}
+
+.pagination {
+    position: relative;
+    margin: 24px auto 0
+}
+
+.pagination li {
+    float: left;
+    margin: 0 1px;
+    list-style: none;
+    padding: 0 3px
+}
+
+.pagination li a {
+    display: block;
+    width: 12px;
+    height: 0;
+    padding-top: 12px;
+    background-image: url(../images/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden
+}
+
+.pagination li.current a {
+    background-position: 0 -12px
+}
+
+#nav a:hover,
+#nav a.selected,
+#tab-head h1,
+#lightbox-wrap h1,
+#nav a,
+.tabs-nav a,
+.tabs-nav li.active a span,
+#lightbox-wrapstandalone {
+    color: #fff
+}
+
+#lightbox-wrap h2,
+#email.widget h3,
+.lightbox-help,
+#lightbox-wrap {
+    color: #7d7c7c
+}
+
+#lightbox-wrap,
+.tabs-nav span {
+    background-color: #3b3b3b
+}
+
+.tabs-nav li.active a {
+    color: #333
+}
+
+.tabs-nav li a:hover {
+    background-color: #7d7c7c
+}
+
+@media screen and (max-device-width:480px) {
+    body {
+        -webkit-text-size-adjust: none
+    }
+
+    .widget {
+        margin-bottom: 10px
+    }
+}
+
+.choose-widget-wrapper {
+    display: none;
+}

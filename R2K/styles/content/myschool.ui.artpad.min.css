@@ -1,0 +1,172 @@
+﻿#can
+{
+    float: left;
+    width: 428px;
+    height: 326px;
+    margin-bottom: 2px;
+    background-color: #fff;
+    border: 1px solid #cecece;
+}
+.pens
+{
+    float: left;
+    width: 314px;
+    margin-bottom: 4px;
+}
+.palette
+{
+    float: left;
+    width: 321px;
+}
+.canvas_container .canvas_btns
+{
+    float: right;
+    width: 102px;
+    padding-top: 10px;
+}
+.pens-palette
+{
+    float: left;
+    width: 316px;
+    height: 105px;
+    padding: 0;
+    background-color: #fff;
+}
+.canvas_container
+{
+    float: left;
+    width: 430px;
+}
+#canvas_dl, #canvas_clear
+{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 102px;
+    padding: 10px 0;
+    margin-bottom: 2px;
+    font: 1em Arial,Helvetica,sans-serif;
+    color: #595959;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #a4a4a4;
+}
+#canvas_dl
+{
+    margin-top: 8px;
+}
+#canvas_clear
+{
+    clear: left;
+    color: #fff;
+    background-color: #757575;
+}
+canvas
+{
+    cursor: crosshair;
+}
+#canvas_colors
+{
+    margin: 0 auto;
+    margin-left: 2px;
+    max-width: 220px;
+}
+#canvas_colors div
+{
+    cursor: pointer;
+    cursor: hand;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 1px;
+}
+#canvas_actual
+{
+    width: 430px;
+    height: 328px;
+}
+.canvas_selected
+{
+    box-shadow: 0 1px 11px #c3c3c3;
+}
+.canvas_selectable:hover
+{
+    box-shadow: 0 1px 11px #c3c3c3;
+}
+.canvas_pencolor
+{
+    background-color: #000;
+    margin-top: 1px;
+    width: 41px;
+    height: 41px;
+    border: 1px solid #c3c3c3;
+}
+.canvas_selectable
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.canvas_container div
+{
+    float: left;
+}
+.canvas_icon_dot1, .canvas_icon_dot2, .canvas_icon_dot3, .canvas_icon_dot4, .canvas_icon_dot5, .canvas_icon_mix, .canvas_icon_download, .canvas_icon_pen, .canvas_icon_palette, .canvas_icon_rubber, .canvas_icon_spacer
+{
+    width: 42px;
+    height: 44px;
+}
+.canvas_icon_html5
+{
+    padding-top: 0;
+    height: 30px;
+}
+.canvas_icon_dot1
+{
+    background: url("../../images/content/canvas_icons.png") no-repeat 0 0;
+}
+.canvas_icon_dot2
+{
+    background: url("../../images/content/canvas_icons.png") no-repeat -42px 0;
+}
+.canvas_icon_dot3
+{
+    background: url("../../images/content/canvas_icons.png") no-repeat -84px 0;
+}
+.canvas_icon_dot4
+{
+    background: url("../../images/content/canvas_icons.png") no-repeat -126px 0;
+}
+.canvas_icon_dot5
+{
+    background: url("../../images/content/canvas_icons.png") no-repeat -168px 0;
+}
+.canvas_icon_mix
+{
+    background: url("../../images/content/canvas_icons.png") no-repeat -210px 0;
+}
+.canvas_icon_download
+{
+    background: url("../../images/content/canvas_icons.png") no-repeat -42px -44px;
+}
+.canvas_icon_pen
+{
+    margin-right: 9px;
+    background: url("../../images/content/canvas_icons.png") no-repeat -84px -44px;
+}
+.canvas_icon_palette
+{
+    margin-right: 9px;
+    background: url("../../images/content/canvas_icons.png") no-repeat -126px -44px;
+}
+.canvas_icon_rubber
+{
+    background: url("../../images/content/canvas_icons.png") no-repeat -168px -44px;
+}
+.canvas_icon_spacer
+{
+    background: url("../../images/content/canvas_icons.png") no-repeat -210px -44px;
+}
+
+
+
+

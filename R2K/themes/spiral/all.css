@@ -1,0 +1,50 @@
+body {
+    background: #101010 url("bg.jpg") no-repeat center 0 fixed;
+    color: #000;
+    -webkit-background-size: 110% auto;
+    -moz-background-size: 110% auto;
+    -o-background-size: 110% auto;
+    background-size: 110% auto;
+}
+
+.widget-head {
+    background-color: #527AF2;
+    background-image: none;
+}
+
+#header-wrap, #lightbox-wrap, .tabs-nav span, .create-rss-widget, .lightbox-help span, .ui-widget-header, #external-app-bar {
+    background-color: #84B6F1;
+}
+
+#control-panel, #accordion, .accordion-heading, #add-favourite .add, .save-btn, .incorrect-details a, .add-widget, #create-rss input[type="submit"], #create-notice input[type="submit"], #font-sizer a.selected, .f-ok, .f-close {
+    background-color: #527AF2;
+}
+
+#auppic {
+    background-position: 0 0;
+}
+
+#footer, #footer #aup {
+    color: #ffffff;
+}
+
+#tab-head h1 {
+    color: #527AF2;
+}
+/*Style sheet for Password Expiry alert content Index.aspx page.*/
+.password-expiry-notification {
+    text-align: center;
+    width: 100%;
+    border: 2px double #ff0000;
+    background-color: #ffffff;
+    margin-top: 5px;
+    padding-top: 5px; 
+    font-weight: bold;
+    margin-left: -5px;
+    float: left;
+    color:#FF0000 !important;
+}
+ .password-expiry-notification  a {
+    color:#FF0000 !important;
+    text-decoration: underline;
+    }

@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>R2K</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=978" />
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://www.c2kschools.net/login/noscript.aspx">
+    </noscript>
+    <link rel="Shortcut Icon" href="images/logos/R2K.ico" type="image/x-icon" />
+    <script type='text/javascript' src='scripts/jquery.1.3.7.js'></script>
+    <link rel="stylesheet" href="styles/myschool.launchicons.min.css" />
+    <link rel="stylesheet" href="styles/myschool.index.min.css" />
+    <link rel="stylesheet" href="styles/myschool.panel.min.css" />
+    <link rel="stylesheet" href="styles/myschool.notices.min.css" />
+    <link rel="stylesheet" href="styles/myschool.fancybox.min.css" />
+    <link rel="stylesheet" href="styles/content/myschool.ui.artpad.min.css" />
+    <link rel="stylesheet" href="styles/content/myschool.ui.todolist.min.css" />
+    <link rel="stylesheet" href="styles/content/myschool.ui.clock.min.css" />
+    <link rel="stylesheet" href="styles/content/myschool.ui.calculator.min.css" />
+    <link rel="stylesheet" href="styles/content/myschool.ui.wiki.min.css" />
+    <link rel="stylesheet" href="styles/content/myschool.ui.metrics.min.css" />
+    <link rel="stylesheet" href="styles/content/myschool.ui.weather.min.css" />
+    <link rel="stylesheet" href="styles/content/myschool.ui.googlesearch.min.css" />
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.tallest.js"></script>
+    <script src="scripts/theme-switcher.js"></script>
+    <script src="scripts/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="scripts/content/myschool.ui.wiki.js"></script>
+    <script src="scripts/content/myschool.ui.calculator.js"></script>
+    <script src="scripts/content/myschool.ui.weather.js"></script>
+    <script src="scripts/content/myschool.ui.metrics.js"></script>
+    <script src="scripts/content/myschool.ui.googlesearch.js"></script>
+    <script src="scripts/htmlEncode.js"></script>
+    <script src="scripts/myschool.ui.popups.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/myschool.ui.fancyfunctions.js"></script>
+    <script src="scripts/jquery.swfobject.js"></script>
+    <script src="scripts/jquery.masonry.min.js"></script>
+    <script src="scripts/jquery.cycle.js"></script>
+    <script src="scripts/jquery.accordion.1.6.js"></script>
+    <script src="scripts/jquery.slides3.0.4.min.js"></script>
+    <script src="scripts/jquery.slides.min.js"></script>
+    <script src="scripts/content/myschool.ui.artpad.js"></script>
+    <script src="scripts/content/myschool.ui.todolist.js"></script>
+    <script src="scripts/content/myschool.ui.clock.js"></script>
+    <script src="scripts/nameChanger.js"></script>
+    <script src="scripts/role-switcher.js"></script>
+    <script src="scripts/pfp-changer.js"></script>
+    <script type="text/javascript">
+        var $ = jQuery.noConflict();
+    </script>
+
+<script>
+    var virutaldir = "/standard/";
+    var serviceurl = "https://www.c2kschools.net/services/";
+    var emailRefreshTime = "120000";
+    var urgentAlertsRefreshTime = "120000";
+    var urlStandard = "https://www.c2kschools.net/standard/";
+</script>
+    <script src="scripts/jquery.zrssfeed.js"></script>
+    <script src="scripts/myschool.ui.widgets.js"></script>
+    <link rel='stylesheet' href='themes/leaves/all.css' id='theme-stylesheet'>
+    <script> var serviceUrl = "https://www.c2kschools.net/services/" </script>
+    <link rel="stylesheet" href="Styles/jquery-te-1.3.5.css" />
+    <script src="scripts/jquery-te-1.3.5.min.js"></script>
+</head>
+
+<body class="font-large">
+    <input type="hidden" id="currenttab" value="2" />
+    <div style='display: none;'>
+        <div id='helpcontainer' class='helptext'>
+            <h1>
+                Help
+            </h1>
+
+            Please contact a member of staff for support.<br /><br />
+
+            Click here to view our <a href="accessibility.html" title="Accessibility Guidelines"
+                id="AccessibilityGuidelines" class="roundbluebutton">Accessibility
+                Guidelines</a>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div id="header-wrap">
+            <div id="header" class="my-school">
+                <div class="header-links">
+                    <div>
+                        <ul id="secondary-links">
+                            <li>
+                            <li><a href="https://github.com/snailvinyl/R2K" id="visitschoolwebsite" target="_blank"
+                                    title="Visit Repository">Visit Repository</a></li>
+                             <li>
+                                <a href="https://github.com/snailvinyl/R2K/releases" id="releases" title="Download">Download</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="school-crest">
+                    <a href="details.html" id="school_popup"
+                        title="">
+                        <img src="images/logos/R2K.png" title="" alt="" width="80" height="80" />
+                    </a>
+
+
+                    <div style="font-family: trebuchet ms,helvetica,sans-serif">
+                        <a href="details.html" id="school_popup_name"
+                            title="">R2K</a>
+                    </div>
+
+                </div>
+
+                <ul id="nav">
+                    <li><a class="" role="tab" data-tabid="2" data-tabname="MyHome" href="index.html"
+                            title="MyHome">MyHome</a></li>
+                    <li><a class=" selected" role="tab" data-tabid="882771" data-tabname="Widgets"
+                            href="widgets.html" title="Widgets">Widgets</a></li>
+                    <li><a class="" role="tab" data-tabid="882778" data-tabname="Customisation"
+                            href="customisation.html" title="Customisation">
+                            Customisation</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script>myschoolPopups.Init();</script>
+
+        <div id="content">
+            <div id="primary-content">
+                <div id="columns">
+                    <ul id="column1" class="column ui-sortable masonry"
+                        style="position: relative; height: 352px; display: block;">
+                        <li class="widget widget-single  masonry-brick" id="clock" data-widgetid="1121483" data-pid="0"
+                            data-cat="" data-title="clock" data-widgetcontentid="30"
+                            style="position: absolute; top: 0px; left: 0px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;"></span>
+                                    <h2>Clock</h2><a id="help30" href="#help30content" class="help"
+                                        title="Click for help" style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help30content" class="helptext">
+                                            <h2>Clock Help</h2>
+                                            <p>This widget displays the current time, day and date.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="778599Content1121483">
+                                <div id="javascript-clock" class="rapClock" style="height: 100px;">
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(0deg) translate(0px, 36px) rotate(0deg);">
+                                        6</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(30deg) translate(0px, 36px) rotate(-30deg);">
+                                        7</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(60deg) translate(0px, 36px) rotate(-60deg);">
+                                        8</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(90deg) translate(0px, 36px) rotate(-90deg);">
+                                        9</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(120deg) translate(0px, 36px) rotate(-120deg);">
+                                        10</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(150deg) translate(0px, 36px) rotate(-150deg);">
+                                        11</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(180deg) translate(0px, 36px) rotate(-180deg);">
+                                        12</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(210deg) translate(0px, 36px) rotate(-210deg);">
+                                        1</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(240deg) translate(0px, 36px) rotate(-240deg);">
+                                        2</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(270deg) translate(0px, 36px) rotate(-270deg);">
+                                        3</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(300deg) translate(0px, 36px) rotate(-300deg);">
+                                        4</div>
+                                    <div class="rapClockNumbers"
+                                        style="font-size: 10px; transform: translate(-50%, -50%) rotate(330deg) translate(0px, 36px) rotate(-330deg);">
+                                        5</div>
+                                    <div class="rapClockHands rapClockH"
+                                        style="transform: translate(-50%, -50%) rotate(493.5deg) translate(0px, -40%);">
+                                    </div>
+                                    <div class="rapClockHands rapClockM"
+                                        style="transform: translate(-50%, -50%) rotate(162deg) translate(0px, -45%);">
+                                    </div>
+                                    <div class="rapClockHands rapClockS"
+                                        style="transform: translate(-50%, -50%) rotate(264deg) translate(0px, -30%);">
+                                    </div>
+                                </div>
+                                <p class="clock-date" id="clockDate">Tuesday<br><span class="date">7</span><br><span
+                                        class="month-year">March 2023</span></p>
+                            </div><span class="widget-btm"></span>
+                        </li>
+                        <li class="widget widget-single  masonry-brick" id="googlesearch" data-widgetid="1153002" data-pid="0" data-cat=""
+                            data-title="googlesearch" data-widgetcontentid="27" style="position: absolute; top: 0px; left: 240px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;"><span></span>
+                                    <h2>Google Search</h2><a id="help27" href="#help27content" class="help" title="Click for help"
+                                        style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help27content" class="helptext">
+                                            <h2>Google Search Help</h2>
+                                            <p>This widget lets you use the Google Search engine via MY-SCHOOL.<br><br>Enter the word you want
+                                                to search for and then click Go to display the search results in a separate browser window.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="778610Content1153002">
+                                <fieldset class="g-search"><label for="googlesearchbox">Website Address</label><input id="googlesearchbox"
+                                        name="googlesearchbox" title="Google Search" type="text"><input id="googlesearchgo"
+                                        name="googlesearchgo" title="Click to search" type="button" value="Go"></fieldset>
+                            </div><span class="widget-btm"></span>
+                        </li>
+                        <li class="widget widget-single  masonry-brick" id="weather" data-widgetid="1137147" data-pid="41" data-cat="Weather"
+                            data-title="weather" data-widgetcontentid="32" style="position: absolute; top: 0px; left: 480px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;">
+                                    <h2>Weather</h2><a id="help30" href="#help32content" class="help" title="Click for help"
+                                        style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help32content" class="helptext">
+                                            <h2>Weather Help</h2>
+                                            <p>This widget reports the latest weather conditions for the local area.<br><br>The information is
+                                                obtained from an external internet-based service.</p>
+                                            <p>This widget was re-coded by <a href="https://github.com/snailvinyl/">snailvinyl</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="778617Content1137147">
+                                <div class="current-conditions">
+                                    <img class="weather-img" src="NaN" alt="Today's weather" />
+                                    <p class="txt">Current Conditions<br><span class="deg">NaN&deg;C</span><br><span
+                                            class="condition">undefined</span></p>
+                                </div>
+                                <div class="forecast">
+                                    <p>Forecast</p>
+                                    <div class="forecast-day">
+                                        <strong>NaN</strong>
+                                        <span class="forecast-conditions">NaN</span><br>
+                                        High: NaN&deg;C<br>
+                                        Low: NaN&deg;C
+                                    </div>
+                                    <div class="forecast-day">
+                                        <strong>NaN</strong>
+                                        <span class="forecast-conditions">NaN</span><br>
+                                        High: NaN&deg;C<br>
+                                        Low: NaN&deg;C
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="widget-btm"></span>
+                        </li>
+                        <li class="widget widget-single  masonry-brick" id="calculator" data-widgetid="1119490"
+                            data-pid="0" data-cat="" data-title="calculator" data-widgetcontentid="29"
+                            style="position: absolute; top: 0px; left: 0px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;">
+                                    <h2>Calculator</h2><a id="help29" href="#help29content" class="help"
+                                        title="Click for help">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help29content" class="helptext">
+                                            <h2>Calculator Help</h2>
+                                            <p>This widget lets you perform basic arithmetic using the
+                                                calculator.<br><br>Click the buttons to enter your calculation.
+                                                Calculations work from left to right, e.g. 2 + 3 x 4 will give the
+                                                answer 20.<br><br>Click the Equals (=) button to see the result of your
+                                                calculation or the C button to clear a calculation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="778598Content1119490">
+                                <div id="flash-calc">
+                                    <div id="calc" title="Calculator">
+                                        <div id="calc-input">
+                                            <div class="calc-input-wrap">
+                                                <input type="text" id="calcResults" name="calcResults" title="Result"
+                                                    class="CalBox" onkeypress="return onlyNumbers();" maxlength="12">
+                                                <div id="ButtonEqual" onclick="gCalculator.OnClick('=')"
+                                                    class="CalcOrangeButton" title="equals">
+                                                    =</div>
+                                            </div>
+                                        </div>
+                                        <ul class="CalcCol">
+                                            <li id="Button1" onclick="gCalculator.OnClick('1')" class="CalcDarkButton"
+                                                title="one">
+                                                1</li>
+                                            <li id="Button4" onclick="gCalculator.OnClick('4')" class="CalcDarkButton"
+                                                title="four">
+                                                4</li>
+                                            <li id="Button7" onclick="gCalculator.OnClick('7')" class="CalcDarkButton"
+                                                title="seven">
+                                                7</li>
+                                            <li id="ButtonDot" onclick="gCalculator.OnClick('.')" class="CalcDarkButton"
+                                                title="decimal point">
+                                                .</li>
+                                        </ul>
+                                        <ul class="CalcCol">
+                                            <li id="Button2" onclick="gCalculator.OnClick('2')" class="CalcDarkButton"
+                                                title="two">
+                                                2</li>
+                                            <li id="Button5" onclick="gCalculator.OnClick('5')" class="CalcDarkButton"
+                                                title="five">
+                                                5</li>
+                                            <li id="Button8" onclick="gCalculator.OnClick('8')" class="CalcDarkButton"
+                                                title="eight">
+                                                8</li>
+                                            <li id="Button0" onclick="gCalculator.OnClick('0')" class="CalcDarkButton"
+                                                title="zero">
+                                                0</li>
+                                        </ul>
+                                        <ul class="CalcCol">
+                                            <li id="Button3" onclick="gCalculator.OnClick('3')" class="CalcDarkButton"
+                                                title="three">
+                                                3</li>
+                                            <li id="Button6" onclick="gCalculator.OnClick('6')" class="CalcDarkButton"
+                                                title="six">
+                                                6</li>
+                                            <li id="Button9" onclick="gCalculator.OnClick('9')" class="CalcDarkButton"
+                                                title="nine">
+                                                9</li>
+                                            <li class="CalcOrangeButton" title="clear"
+                                                onclick="gCalculator.OnClick('c')">C</li>
+                                        </ul>
+                                        <ul class="CalcCol end">
+                                            <li id="ButtonPlus" onclick="gCalculator.OnClick('+')"
+                                                class="CalcGreyButton" title="add">
+                                                +</li>
+                                            <li id="ButtonMin" onclick="gCalculator.OnClick('-')" class="CalcGreyButton"
+                                                title="minus">
+                                                -</li>
+                                            <li id="ButtonX" onclick="gCalculator.OnClick('*')" class="CalcGreyButton"
+                                                title="multiply">
+                                                x</li>
+                                            <li id="ButtonDiv" onclick="gCalculator.OnClick('/')" class="CalcGreyButton"
+                                                title="divide">
+                                                ÷</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><span class="widget-btm"></span>
+                        </li>
+                        <li class="widget widget-double  masonry-brick" id="metrics" data-widgetid="1093305" data-pid="0" data-cat=""
+                            data-title="metrics" data-widgetcontentid="74" style="position: absolute; top: 514px; left: 0px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;"></span>
+                                    <h2>Metrics</h2><a id="help74" href="#help74content" class="help" title="Click for help"
+                                        style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help74content" class="helptext">
+                                            <h2>Metrics Help</h2>
+                                            <p>This widget is a calculator that converts the value of one metric into the relative value of
+                                                another metric.<br><br>You can convert various Length, Temperature, Weight and Volume
+                                                metrics.<br><br>Choose the From and To metrics, enter a Value, and then click the Convert button
+                                                to view the result of the conversion.</p>
+                                            <p>This widget was re-coded by <a href="https://github.com/snailvinyl/">snailvinyl</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="778612Content1093305">
+                                <div id="conversion">
+                                    <table class="conversionTableParent">
+                                        <tbody>
+                                            <tr>
+                                                <td class="conversionTD">
+                                                    <p></p>
+                                                    <h2>Length Conversion</h2>
+                                                    <p></p>
+                                                    <p class="conversionTable"><label for="MetricsLengthFrom">From:</label><select
+                                                            id="MetricsLengthFrom" title="">
+                                                            <option value="1">Metres (m)</option>
+                                                            <option value="2">Kilometres (km)</option>
+                                                            <option value="3">Centimetres (cm)</option>
+                                                            <option value="4">Milimetres (mm)</option>
+                                                            <option value="5">Miles (mi)</option>
+                                                            <option value="6">Yards (yrd)</option>
+                                                            <option value="7">Feet (ft)</option>
+                                                            <option value="8">Inches (in)</option>
+                                                        </select></p>
+                                                    <p class="conversionTable"> <label for="MetricsLengthTo">To:</label><select
+                                                            id="MetricsLengthTo" title="">
+                                                            <option value="1">Metres (m)</option>
+                                                            <option value="2">Kilometres (km)</option>
+                                                            <option value="3">Centimetres (cm)</option>
+                                                            <option value="4">Milimetres (mm)</option>
+                                                            <option value="5">Miles (mi)</option>
+                                                            <option value="6">Yards (yrd)</option>
+                                                            <option value="7">Feet (ft)</option>
+                                                            <option value="8">Inches (in)</option>
+                                                        </select></p>
+                                                    <p class="conversionTable"><label for="MetricsLengthValue">Value:</label> <input type="text"
+                                                            id="MetricsLengthValue" maxlength="10" title="Value"></p>
+                                                    <p style="clear: both"><input type="button" class="send" title="Convert" value=" Convert "
+                                                            id="MetricsLengthButton"></p>
+                                                    <p></p>
+                                                    <p style="clear: both"></p>
+                                                    <div id="Lengthresult"></div>
+                                                    <p></p>
+                                                    <p></p>
+                                                </td>
+                                                <td class="conversionTD">
+                                                    <p></p>
+                                                    <h2>Temperature Conversion</h2>
+                                                    <p></p>
+                                                    <p class="conversionTable"><label for="MetricsTemperatureFrom">From:</label><select
+                                                            id="MetricsTemperatureFrom" title="">
+                                                            <option value="1">Celsius (°C)</option>
+                                                            <option value="2">Fahrenheit (°F)</option>
+                                                        </select></p>
+                                                    <p class="conversionTable"> <label for="MetricsTemperatureTo">To:</label><select
+                                                            id="MetricsTemperatureTo" title="">
+                                                            <option value="1">Celsius (°C)</option>
+                                                            <option value="2">Fahrenheit (°F)</option>
+                                                        </select></p>
+                                                    <p class="conversionTable"><label for="MetricsTemperatureValue">Value:</label> <input
+                                                            type="text" id="MetricsTemperatureValue" maxlength="10" title="Value"></p>
+                                                    <p style="clear: both"><input type="button" class="send" title="Convert" value=" Convert "
+                                                            id="MetricsTemperatureButton"></p>
+                                                    <p></p>
+                                                    <p style="clear: both"></p>
+                                                    <div id="Temperatureresult"></div>
+                                                    <p></p>
+                                                    <p></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="conversionTD">
+                                                    <p></p>
+                                                    <h2>Weight Conversion</h2>
+                                                    <p></p>
+                                                    <p class="conversionTable"><label for="MetricsWeightFrom">From:</label><select
+                                                            id="MetricsWeightFrom" title="">
+                                                            <option value="1">Kilograms (kg)</option>
+                                                            <option value="2">Grams (g)</option>
+                                                            <option value="3">Miligrams (mg)</option>
+                                                            <option value="4">Pounds (lb)</option>
+                                                            <option value="5">Ounces (oz)</option>
+                                                            <option value="6">Stones (st)</option>
+                                                        </select></p>
+                                                    <p class="conversionTable"> <label for="MetricsWeightTo">To:</label><select
+                                                            id="MetricsWeightTo" title="">
+                                                            <option value="1">Kilograms (kg)</option>
+                                                            <option value="2">Grams (g)</option>
+                                                            <option value="3">Miligrams (mg)</option>
+                                                            <option value="4">Pounds (lb)</option>
+                                                            <option value="5">Ounces (oz)</option>
+                                                            <option value="6">Stones (st)</option>
+                                                        </select></p>
+                                                    <p class="conversionTable"><label for="MetricsWeightValue">Value:</label> <input type="text"
+                                                            id="MetricsWeightValue" maxlength="10" title="Value"></p>
+                                                    <p style="clear: both"><input type="button" class="send" title="Convert" value=" Convert "
+                                                            id="MetricsWeightButton"></p>
+                                                    <p></p>
+                                                    <p style="clear: both"></p>
+                                                    <div id="Weightresult"></div>
+                                                    <p></p>
+                                                    <p></p>
+                                                </td>
+                                                <td class="conversionTD">
+                                                    <p></p>
+                                                    <h2>Volume Conversion</h2>
+                                                    <p></p>
+                                                    <p class="conversionTable"><label for="MetricsVolumeFrom">From:</label><select
+                                                            id="MetricsVolumeFrom" title="">
+                                                            <option value="1">Litres (l)</option>
+                                                            <option value="2">Gallons</option>
+                                                        </select></p>
+                                                    <p class="conversionTable"> <label for="MetricsVolumeTo">To:</label><select
+                                                            id="MetricsVolumeTo" title="">
+                                                            <option value="1">Litres (l)</option>
+                                                            <option value="2">Gallons</option>
+                                                        </select></p>
+                                                    <p class="conversionTable"><label for="MetricsVolumeValue">Value:</label> <input type="text"
+                                                            id="MetricsVolumeValue" maxlength="10" title="Value"></p>
+                                                    <p style="clear: both"><input type="button" class="send" title="Convert" value=" Convert "
+                                                            id="MetricsVolumeButton"></p>
+                                                    <p></p>
+                                                    <p style="clear: both"></p>
+                                                    <div id="Volumeresult"></div>
+                                                    <p></p>
+                                                    <p></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div><span class="widget-btm"></span>
+                        </li>
+                        <li class="widget widget-single  masonry-brick" id="wikisearch" data-widgetid="1119495"
+                            data-pid="0" data-cat="" data-title="wikisearch" data-widgetcontentid="38"
+                            style="position: absolute; top: 0px; left: 240px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;">
+                                    <h2>Wiki Search</h2><a id="help38" href="#help38content" class="help"
+                                        title="Click for help" style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help38content" class="helptext">
+                                            <h2>Wiki Search Help</h2>
+                                            <p>This widget lets you use Wikipedia, the online encyclopedia, via
+                                                MY-SCHOOL.<br><br>Enter the word you want to search for and then click
+                                                Go to display the search results in a separate browser window.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="778618Content1119495">
+                                <fieldset class="g-search"><label for="wikisearchbox">Website Address</label><input
+                                        id="wikisearchbox" name="wikisearchbox" title="Wiki Search" type="text"><input
+                                        id="wikisearchgo" name="wikisearchgo" title="Click to search" type="button"
+                                        value="Go"></fieldset>
+                            </div><span class="widget-btm"></span>
+                        </li>
+                        <li class="widget widget-single  masonry-brick" id="schoolwebsite" data-widgetid="1120570"
+                            data-pid="0" data-cat="" data-title="schoolwebsite" data-widgetcontentid="9289"
+                            style="position: absolute; top: 0px; left: 0px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;">
+                                    <h2>snailvinyl's Website</h2>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="974341Content1120570">Visit snailvinyl's Website!</div><span
+                                class="widget-btm"></span><a href="https://snailvinyl.github.io" rel="external"
+                                class="launch-new-window" data-pid="0" data-wid="9289" title="Launch School Website"
+                                data-oib="False">Open</a>
+                        </li>
+                        <li class="widget widget-single  masonry-brick" id="papercut" data-widgetid="1120920"
+                            data-pid="59" data-cat="Printer" data-title="papercut" data-widgetcontentid="676"
+                            style="position: absolute; top: 0px; left: 240px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;"></span>
+                                    <h2>Papercut</h2><a id="help676" href="#help676content" class="help"
+                                        title="Click for help" style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help676content" class="helptext">
+                                            <h2>Papercut Help</h2>
+                                            <p>This widget displays information from the Printer Management portal,
+                                                Paper Cut.<br><br>Click the
+                                                View Printer Management link to open the Paper Cut login page in a new
+                                                browser
+                                                window.<br><br>Click the <a href="#" class="buttonselection"
+                                                    title="Expand button">a</a> button
+                                                to get full access to Papercut in a separate browser window.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="897730Content1120920">
+                                <div id="PapercutContentName"><img alt="Papercut" src="images/content/papercut.png">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="tdstyle"><b>Balance: </b></td>
+                                                <td>£9.30</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdstyle"><b>Pages: </b></td>
+                                                <td>187</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdstyle"><b>Trees: </b></td>
+                                                <td>0.232%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdstyle"><b>CO2: </b></td>
+                                                <td>841.5g</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdstyle"><b>Bulb hours: </b></td>
+                                                <td>52.98</td>
+                                            </tr>
+                                        </tbody>
+                                    </table><br>
+                                </div>
+                            </div><span class="widget-btm"></span><a
+                                href="https://www.c2kschools.net/standard/SSO.aspx?provider=59&amp;cat=Printer&amp;title=Papercut&amp;wid=676&amp;target=NONE676"
+                                rel="external" class="launch-new-window" data-pid="59" data-wid="676"
+                                title="Launch Papercut" data-oib="False">Open</a>
+                        </li>
+                        <li class="widget widget-single  masonry-brick" id="todolist" data-widgetid="1121468" data-pid="0" data-cat=""
+                            data-title="todolist" data-widgetcontentid="886" style="position: absolute; top: 496px; left: 480px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;">
+                                    <h2>Todo List</h2><a id="help886" href="#help886content" class="help" title="Click for help"
+                                        style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help886content" class="helptext">
+                                            <h2>Todo List Help</h2>
+                                            <p>This widget lets you create a list of up to 30 To-Do tasks. You can check
+                                                tasks as complete, or delete as necessary.</p>
+                                            <p>This widget was re-coded by <a href="https://github.com/snailvinyl/">snailvinyl</a>.</p>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <div class="widget-content" id="897732Content1121468">
+                                <div id="add-todo">
+                                    <ul class="todobox">
+                                        <li><label for="todo_newitem" title="Enter Todo" class="overlay"></label><input type="text"
+                                                id="todo_newitem" placeholder="Enter Todo..." title="Enter Todo..."><input type="button"
+                                                id="todo_add" value="Add item"></li>
+                                    </ul>
+                                </div>
+                                <ul id="todolistitems" style="display: block;">
+                                    <li class="todo" id="todoitem475225"><input type="checkbox" class="done" value="true" checked="">
+                                        <div id="text_wrapper" class="">Yes<div class="date_created">23/02/2023 11:27 AM
+                                            </div>
+                                        </div><a class="todo_delete" class="link_delete" href="#">x</a>
+                                    </li>
+                                </ul>
+                            </div><span class="widget-btm"></span>
+                        </li>
+                        <li class="widget widget-double  masonry-brick" id="artpad" data-widgetid="1121267" data-pid="0" data-cat=""
+                            data-title="artpad" data-widgetcontentid="458" style="position: absolute; top: 0px; left: 0px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;"></span>
+                                    <h2>ArtPad</h2><a id="help458" href="#help458content" class="help" title="Click for help">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help458content" class="helptext">
+                                            <h2>ArtPad Help</h2>
+                                            <p>This widget provides a simple free-hand drawing tool.<br><br>Use your
+                                                mouse to draw a picture.<br><br>You can choose the thickness and colour
+                                                of the lines you draw.<br><br>You can save your drawing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content" id="804748Content1121267">
+                                <div id="canvas_actual"> <canvas id="can" class="canvas_cursor_brush" width="430" height="328"></canvas>
+                                    <div class="canvas_container">
+                                        <div class="pens-palette">
+                                            <div class="pens">
+                                                <div class="canvas_icon_pen"></div>
+                                                <div id="canvas_pens">
+                                                    <div data-size="5" class="canvas_icon_dot1 canvas_selectable"></div>
+                                                    <div data-size="10" class="canvas_icon_dot2 canvas_selectable canvas_selected">
+                                                    </div>
+                                                    <div data-size="15" class="canvas_icon_dot3 canvas_selectable">
+                                                    </div>
+                                                    <div data-size="25" class="canvas_icon_dot4 canvas_selectable">
+                                                    </div>
+                                                    <div data-size="35" class="canvas_icon_dot5 canvas_selectable">
+                                                    </div>
+                                                </div>
+                                            </div><!--pens-->
+                                            <div class="palette">
+                                                <div class="canvas_icon_palette"></div>
+                                                <div id="canvas_colorselected" class="canvas_pencolor"></div>
+                                                <div id="canvas_colors">
+                                                    <div style="background-color: #000000;"> </div>
+                                                    <div style="background-color: #7f7f7f;"> </div>
+                                                    <div style="background-color: #970017;"> </div>
+                                                    <div style="background-color: #ff0008;"> </div>
+                                                    <div style="background-color: #ff7300;"> </div>
+                                                    <div style="background-color: #fff200;"> </div>
+                                                    <div style="background-color: #00ff4c;"> </div>
+                                                    <div style="background-color: #0099ff;"> </div>
+                                                    <div style="background-color: #0011ff;"> </div>
+                                                    <div style="background-color: #fb00ff;"> </div>
+                                                    <div style="background-color: #fff; border: 1px solid #c3c3c3;height: 18px; width: 18px;">
+                                                    </div>
+                                                    <div style="background-color: #c3c3c3;"> </div>
+                                                    <div style="background-color: #81350c;"> </div>
+                                                    <div style="background-color: #ff0080;"> </div>
+                                                    <div style="background-color: #fdff8e;"> </div>
+                                                    <div style="background-color: #fff8d7;"> </div>
+                                                    <div style="background-color: #aeff7f;"> </div>
+                                                    <div style="background-color: #00ffff;"> </div>
+                                                    <div style="background-color: #006eff;"> </div>
+                                                    <div style="background-color: #9900ff;"> </div>
+                                                    <div style="background-color: #ff69b4;"> </div>
+                                                    <div style="background-color: #00ff00;"> </div>
+                                                    <div style="background-color: #ff4500;"> </div>
+                                                    <div style="background-color: #0000ff;"> </div>
+                                                    <div style="background-color: #ffa500;"> </div>
+                                                    <div style="background-color: #800080;"> </div>
+                                                    <div style="background-color: #ffff00;"> </div>
+                                                    <div style="background-color: #00ced1;"> </div>
+                                                    <div style="background-color: #ff1493;"> </div>
+                                                    <div style="background-color: #008080;"> </div>
+                                                </div>
+                                            </div><!--/palette-->
+                                        </div><!--/pens-palette-->
+                                        <div class="canvas_btns">
+                                            <a href="#" id="canvas_clear">Clear</a>
+                                            <a href="#" id="canvas_dl" onclick="downloadCanvas()">Save</a>
+                                        </div>
+                                    </div><!--/canvas_container-->
+                                </div><!--/canvas_actual-->
+                            </div><span class="widget-btm"></span>
+                        </li>
+                        <script>
+                            function downloadCanvas() {
+                                const canvas = document.getElementById("can");
+                                const downloadButton = document.getElementById("canvas_dl");
+
+                                // Create a temporary canvas with the same dimensions as the original canvas
+                                const tempCanvas = document.createElement('canvas');
+                                tempCanvas.width = canvas.width;
+                                tempCanvas.height = canvas.height;
+                                const tempCtx = tempCanvas.getContext('2d');
+
+                                // Fill the temporary canvas with a white background
+                                tempCtx.fillStyle = 'white';
+                                tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+
+                                // Draw the original canvas content onto the temporary canvas
+                                tempCtx.drawImage(canvas, 0, 0);
+
+                                // Generate the data URL for the temporary canvas with a white background
+                                const dataURL = tempCanvas.toDataURL("image/png");
+                                downloadButton.href = dataURL;
+                                downloadButton.download = "canvas.png";
+                            }
+                        </script>
+                        <li class="widget widget-double  masonry-brick" id="artpad" data-widgetid="1121267" data-pid="0"
+                            data-cat="" data-title="artpad" data-widgetcontentid="458"
+                            style="position: absolute; top: 0px; left: 0px;">
+                            <div class="widget-head-wrap" data-collapsed="large">
+                                <div class="widget-head" style="cursor: move;"></span>
+                                    <h2>Notepad</h2>
+                                    <a id="help1124455" href="#help1124455Notepadcontent" class="help"
+                                        title="Click for help" style="display: none;">Help</a>
+                                    <div style="display:none;">
+                                        <div id="help1124455Notepadcontent" class="helptext">
+                                            <h2>Notepad</h2>
+                                            <p>This widget allows you to write notes and paste in text.</p>
+                                            <p>Anything written here will be saved upon refresh or relaunch, unless it is deleted.</p>
+                                            <p>This widget was created by <a href="https://github.com/snailvinyl/">snailvinyl</a>.</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="widget-content" id="804748Content1121267">
+                                <!-- Place the notepad widget here -->
+                                <textarea id="notepad" placeholder="Type your notes here..." style="width: 424px; height: 116px;"></textarea>
+                            </div>
+                            <span class="widget-btm"></span>
+                        </li>
+                        <script>
+                            const notepad = document.getElementById('notepad');
+
+                            // Load saved content from localStorage
+                            if (localStorage.getItem('notepadContent')) {
+                                notepad.value = localStorage.getItem('notepadContent');
+                            }
+
+                            // Save content to localStorage on input event
+                            notepad.addEventListener('input', () => {
+                                localStorage.setItem('notepadContent', notepad.value);
+                            });
+
+                            // Update the parent container size when the notepad is resized
+                            notepad.addEventListener('mouseup', () => {
+                                const parentContainer = notepad.closest('.widget-single');
+                                parentContainer.style.width = `${notepad.offsetWidth}px`;
+                                parentContainer.style.height = `${notepad.offsetHeight + 60}px`; // 60px accounts for header and margin
+                            });
+                        </script>
+                    </ul>
+                </div>
+
+                <div id="footer">
+                    <div>
+                        <div id="copyright">&copy; <a style="text-decoration: none;" href="https://plecak.lol">2023 snailvinyl</a></div>
+                    </div>
+                    <div class="float-right">
+                    </div>
+                </div>
+
+            </div>
+            <div id="control-panel">
+                <div id="user-box">
+                    <div class="profile-img-frame">
+                        <a href="profile.html" id="launch-profile" title="Launch Profile">
+                            <img src="images/profiles/male.png" alt="Your profile picture" title="Your profile picture" id="profile-picture" width="54" height="54">
+                        </a>
+                    </div>
+
+
+                    <div class="profile-details">
+                        <h1>
+                            User
+                        </h1>
+
+                        <h2>
+                            R2K User
+                        </h2>
+                    </div>
+
+
+                </div>
+
+                <div id="accordion">
+
+                    <a class="accordion-heading" title="Launch" data-index="0">
+                        <span>Launch</span>
+                    </a>
+
+                    <div class="accordion-content">
+                        <div class="section apps-box" id="appselectors">
+                            <ul>
+                                <li><a target="_blank"
+                                        href="https://www.c2kschools.net/standard/SSO.aspx?provider=0&cat=&title=Google Classroom&wid=12414&target=https%3a%2f%2fclassroom.google.com%2fa%2fc2ken.net"
+                                        rel="external" data-pid="0" data-wid="12414" title="Launch Google Classroom"
+                                        data-oib="False"><span class="app-Google-Classroom"></span><br />Google
+                                        Classroom</a></li>
+                                <li><a target="_blank"
+                                        href="https://www.c2kschools.net/standard/SSO.aspx?provider=58&cat=Email&title=Microsoft 365 Web Apps&wid=790&target=NONE"
+                                        rel="external" data-pid="58" data-wid="790"
+                                        title="Launch Microsoft 365 Web Apps" data-oib="False"><span
+                                            class="app-office365"></span><br />Microsoft 365 Web Apps</a></li>
+                                <li><a target="_blank"
+                                        href="https://www.c2kschools.net/standard/SSO.aspx?provider=77&cat=Behaviour&title=C2k Media Library&wid=8415&target=NONE"
+                                        rel="external" data-pid="77" data-wid="8415" title="Launch C2k Media Library"
+                                        data-oib="False"><span class="app-c2kmedialibrary"></span><br />C2k Media
+                                        Library</a></li>
+                                <li><a target="_blank"
+                                        href="https://www.c2kschools.net/standard/SSO.aspx?provider=80&cat=Apps&title=My.Apps&wid=13033&target=NONE"
+                                        rel="external" data-pid="80" data-wid="13033" title="Launch MyApps"
+                                        data-oib="False"><span class="app-my-apps"></span><br />MyApps</a></li>
+                                <li><a target="_blank"
+                                        href="https://www.c2kschools.net/standard/SSO.aspx?provider=73&cat=Curriculum&title=C2k NewsDesk&wid=7214&target=NONE"
+                                        rel="external" data-pid="73" data-wid="7214" title="Launch C2k NewsDesk"
+                                        data-oib="False"><span class="app-newsdesk"></span><br />C2k NewsDesk</a></li>
+                                <li><a target="_blank"
+                                        href="https://www.c2kschools.net/standard/SSO.aspx?provider=48&cat=Help&title=Learning Exchange&wid=274&target=NONE"
+                                        rel="external" data-pid="48" data-wid="274" title="Launch Learning Exchange"
+                                        data-oib="False"><span class="app-learningexchange"></span><br />Learning
+                                        Exchange</a></li>
+                                <li><a target="_blank" href="InternalOnly.aspx" rel="external" data-pid="9"
+                                        data-wid="610" title="Launch Equella" data-oib="False"><span
+                                            class="app-equella"></span><br />Equella</a></li>
+                                <li><a target="_blank"
+                                        href="https://www.c2kschools.net/standard/SSO.aspx?provider=15&cat=FileAccess&title=MyFiles&wid=674&target=NONE"
+                                        rel="external" data-pid="15" data-wid="674" title="Launch MyFiles"
+                                        data-oib="False"><span class="app-myfiles"></span><br />MyFiles</a></li>
+                                <li><a target="_blank"
+                                        href="https://www.c2kschools.net/standard/SSO.aspx?provider=0&cat=&title=Google Drive&wid=8364&target=http%3a%2f%2fdrive.google.com%2fa%2fc2ken.net"
+                                        rel="external" data-pid="0" data-wid="8364" title="Launch Google Drive"
+                                        data-oib="False"><span class="app-google-drive"></span><br />Google Drive</a>
+                                </li>
+                            </ul>
+
+
+                            <a href="apps.html" id="view-all-apps" title="View All Apps">View All</a>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery.jeditable.min.js"></script>
+    <script src="scripts/myschool.ui.index.js"></script>
+    <script src="scripts/myschool.ui.panel.js"></script>
+    <script src="scripts/myschool.ui.notices.js"></script>
+    <script src="scripts/myschool.ui.tabs.js"></script>
+    <script src="scripts/myschool.ui.favourites.js"></script>
+    <script src="scripts/content/myschool.ui.artpad.js"></script>
+    <script src="scripts/htmlEncode.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[id^="help"]').fancybox({ 'padding': 0, 'type': 'inline', 'transitionIn': 'none', 'titleShow': false, 'transitionOut': 'none' });
+            if (jQuery().masonry) {
+                if ($('#column1').length > 0) {
+                    $('#column1').masonry('reload');
+                }
+            }
+            myschoolPopups.Init();
+            setTimeout(refreshMasonry, "500");
+        });
+
+        function refreshMasonry() {
+            if (jQuery().masonry) {
+                if ($('#column1').length > 0) {
+                    $('#column1').masonry('reload');
+                }
+            }
+        }
+
+    </script>
+
+    <span id="profileConnectionType" style="visibility: hidden;">
+        EXTERNAL
+
+    </span>
+</body>
+
+</html>
