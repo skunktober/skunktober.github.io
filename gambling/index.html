@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMBLING: THE EXPERIENCE.</title>
+    <meta name="description" content="THE ULTIMATE SIMULATION OF GAMBLING.">
+    <meta name="author" content="beachweak">
+    <meta property="og:title" content="GAMBLING: THE EXPERIENCE">
+    <meta property="og:description" content="THE ULTIMATE SIMULATION OF GAMBLING.">
+    <meta property="og:image" content="https://example.com/your-image.jpg">
+    <meta property="og:url" content="https://beachweak.github.io/gambling">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Comic Sans MS, Comic Sans, cursive;
+            text-align: center;
+            background-image: url("assets/bg.png");
+            animation: moveBackground 30s linear infinite;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @keyframes moveBackground {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -300% 0;
+            }
+        }
+
+        .heading-container {
+            margin-bottom: 20px;
+        }
+
+        #lootBoxContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 100px;
+        }
+
+        #inventoryContainer {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #inventoryList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #inventoryList li {
+            margin-bottom: 5px;
+        }
+
+        #lootBoxImage {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        #openButton {
+            background: linear-gradient(225deg, #d45cd600 0%, #E03000 50%, #E03000 50%, #ab2ba600 100%);
+            color: white;
+            padding: 10px 30px;
+            font-size: 26px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Comic Sans MS';
+            transition: background-color 0.3s;
+            margin-bottom: 5px;
+        }
+
+        #openButton:hover {
+            background: linear-gradient(225deg, #d45cd600 0%, #E03000 50%, #E03000 50%, #ab2ba600 100%);
+            transform: scale(1.1);
+        }
+
+        #meImage {
+            position: fixed;
+            bottom: -50px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        #projectImage {
+            position: fixed;
+            bottom: 300px;
+            right: 20px;
+            z-index: 999;
+            max-width: 25%;
+        }
+
+        .rewardText {
+            font-size: 20px;
+        }
+
+        img[src="assets/gambling.png"] {
+            position: absolute;
+            top: 175px;
+            max-width: 30%;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading-container">
+        <img src="assets/gambling.png" alt="Gambling: The Experience">
+    </div>
+
+    <div id="inventoryContainer">
+        <h2>Inventory</h2>
+        <p><strong>WARNING:</strong> Your inventory <br> resets upon refresh!</p>
+        <ul id="inventoryList"></ul>
+    </div>
+
+    <img id="projectImage" src="assets/project.png" alt="Project Image">
+    <img id="meImage" src="assets/me.png" alt="Me Image">
+
+    <div id="lootBoxContainer">
+        <img id="lootBoxImage" src="assets/lootboxclosed.png" alt="Loot Box">
+        <button id="openButton" onclick="openLootBox()">Open</button>
+        <p class="rewardText" id="openingText"></p>
+    </div>
+
+    <script>
+        function openLootBox() {
+            document.getElementById('lootBoxImage').src = "assets/lootboxopened.png";
+            document.getElementById('openButton').style.display = "none";
+            document.getElementById('openingText').innerText = "Opening...";
+
+            var openingText = document.getElementById('openingText');
+            var openingInterval = setInterval(function () {
+                if (openingText.innerText === "Opening...") {
+                    openingText.innerText = "Opening.";
+                } else if (openingText.innerText === "Opening.") {
+                    openingText.innerText = "Opening..";
+                } else {
+                    openingText.innerText = "Opening...";
+                }
+            }, 100);
+
+            setTimeout(function () {
+                clearInterval(openingInterval);
+                var randomNumber = Math.random();
+                var reward;
+                var rewardImage;
+
+                if (randomNumber < 0.03) {
+                    reward = "A Job At McDonald's";
+                    rewardImage = "assets/mc.png";
+                } else if (randomNumber < 0.06) {
+                    reward = "Salmon";
+                    rewardImage = "assets/salmon.png";
+                } else if (randomNumber < 0.09) {
+                    reward = "Love";
+                    rewardImage = "assets/love.png";
+                } else if (randomNumber < 0.12) {
+                    reward = "Happy Panda Massage & Spa";
+                    rewardImage = "assets/panda.png";
+                } else if (randomNumber < 0.15) {
+                    reward = "IBM ThinkPad 700";
+                    rewardImage = "assets/thinkpad.png";
+                } else if (randomNumber < 0.18) {
+                    reward = "Mint-Condition Brand New Car";
+                    rewardImage = "assets/car.png";
+                } else if (randomNumber < 0.21) {
+                    reward = "£3";
+                    rewardImage = "assets/3quid.png";
+                } else if (randomNumber < 0.24) {
+                    reward = "Crazy Aaron's Thinking Putty";
+                    rewardImage = "assets/putty.png";
+                } else if (randomNumber < 0.27) {
+                    reward = "Huawei WiFi Router";
+                    rewardImage = "assets/huawei.png";
+                } else if (randomNumber < 0.30) {
+                    reward = "Pink Floyd's The Wall 2xLP";
+                    rewardImage = "assets/thewall.png";
+                } else if (randomNumber < 0.33) {
+                    reward = "Autechre Exai 4xLP Vinyl Boxset";
+                    rewardImage = "assets/exai.png";
+                } else if (randomNumber < 0.36) {
+                    reward = "Pim Pimling (Smiling Friends)";
+                    rewardImage = "assets/pim.png";
+                } else if (randomNumber < 0.39) {
+                    reward = "Chinese SimpleLife Steam Key";
+                    rewardImage = "assets/chinese.png";
+                } else if (randomNumber < 0.42) {
+                    reward = "Loose Drillbit";
+                    rewardImage = "assets/drillbit.png";
+                } else if (randomNumber < 0.45) {
+                    reward = "Depressed Red Ball";
+                    rewardImage = "assets/red.png";
+                } else if (randomNumber < 0.48) {
+                    reward = "Pizza Tower Steam Key";
+                    rewardImage = "assets/pizza.png";
+                } else if (randomNumber < 0.51) {
+                    reward = "Reese's Cup (Singular)";
+                    rewardImage = "assets/reece.png";
+                } else if (randomNumber < 0.54) {
+                    reward = "Autechre 12xLP NTS Sessions Vinyl Boxset";
+                    rewardImage = "assets/nts.png";
+                } else if (randomNumber < 0.57) {
+                    reward = "$5";
+                    rewardImage = "assets/fivedollar.png";
+                } else {
+                    reward = "Nothing";
+                    rewardImage = "assets/nothing.png";
+                }
+
+                updateInventory(reward);
+
+                document.getElementById('lootBoxImage').src = rewardImage;
+
+                openingText.innerText = "You got: " + reward + "!";
+                document.getElementById('openButton').innerText = "Open Another";
+                document.getElementById('openButton').style.display = "block";
+            }, 3000);
+        }
+
+        var allItemsMessageDisplayed = false;
+
+        function updateInventory(item) {
+            var inventoryList = document.getElementById('inventoryList');
+            var existingItem = document.getElementById('inventoryItem_' + item);
+
+            if (existingItem) {
+                var itemCount = parseInt(existingItem.getAttribute('data-count')) + 1;
+                existingItem.setAttribute('data-count', itemCount);
+                existingItem.innerText = item + " x" + itemCount;
+            } else {
+                var newItem = document.createElement('li');
+                newItem.setAttribute('id', 'inventoryItem_' + item);
+                newItem.setAttribute('data-count', 1);
+                newItem.innerText = item + " x1";
+                inventoryList.appendChild(newItem);
+            }
+
+            if (!allItemsMessageDisplayed && checkAllItemsPresent()) {
+                var allItemsText = document.createElement('p');
+                allItemsText.innerHTML = "<strong>You've rolled all 20 items!</strong>";
+                document.getElementById('inventoryContainer').appendChild(allItemsText);
+                allItemsMessageDisplayed = true;
+            }
+        }
+
+        function checkAllItemsPresent() {
+            var inventoryList = document.getElementById('inventoryList');
+            var itemCount = inventoryList.childElementCount;
+            return itemCount >= 20;
+        }
+
+    </script>
+</body>
+
+</html>
