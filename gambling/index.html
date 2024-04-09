@@ -50,7 +50,7 @@
             padding: 50px;
             border-radius: 10px;
             position: absolute;
-            bottom: 100px;
+            /* Adjusted value to move it further down */
         }
 
         #inventoryContainer {
@@ -116,10 +116,15 @@
 
         img[src="assets/gambling.png"] {
             position: absolute;
-            top: 175px;
-            max-width: 30%;
+            max-height: 20%;
+            top: 0;
+            /* Set to 0 to move to the top */
+            right: 2%;
+            /* Set to 0 to move to the right */
+            max-width: 45%;
             z-index: -1;
-            transform: translate(-50%, -50%);
+            transform: translate(0, 0);
+            /* No translation needed */
         }
     </style>
 </head>
