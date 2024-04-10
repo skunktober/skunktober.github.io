@@ -60,6 +60,10 @@
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
+            max-height: 850px;
+            /* Example maximum height, adjust as needed */
+            overflow-y: auto;
+            /* Activate vertical scrollbar */
         }
 
         #inventoryList {
@@ -77,8 +81,41 @@
             margin-bottom: 20px;
         }
 
+        #debtCounter {
+            font-size: 50px;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 10px 50px;
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .particle {
+            position: absolute;
+            color: red;
+            font-size: 25px;
+            z-index: 25;
+            animation: particleAnimation 2s ease-out;
+        }
+
+        @keyframes particleAnimation {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+        }
+
         #openButton {
-            background: linear-gradient(225deg, #d45cd600 0%, #E03000 50%, #E03000 50%, #ab2ba600 100%);
+            background: linear-gradient(225deg, #d45cd600 0%, #6100e0 50%, #6100e0 50%, #ab2ba600 100%);
             color: white;
             padding: 10px 30px;
             font-size: 26px;
@@ -128,20 +165,21 @@
         }
     </style>
 </head>
-
 <body>
     <div class="heading-container">
         <img src="assets/gambling.png" alt="Gambling: The Experience">
     </div>
 
+    <div id="debtCounter">Debt: $<span id="debtAmount">0</span></div>
+
     <div id="inventoryContainer">
-        <h2>Inventory</h2>
+        <h2>Inventory <span id="inventoryCounter">(0/35)</span></h2>
         <p><strong>WARNING:</strong> Your inventory <br> resets upon refresh!</p>
         <ul id="inventoryList"></ul>
     </div>
 
-    <img id="projectImage" src="assets/project.png" alt="Project Image">
-    <img id="meImage" src="assets/me.png" alt="Me Image">
+    <img id="projectImage" src="assets/project.png" alt="">
+    <img id="meImage" src="assets/me.png" alt="hiiiii">
 
     <div id="lootBoxContainer">
         <img id="lootBoxImage" src="assets/lootboxclosed.png" alt="Loot Box">
@@ -149,13 +187,49 @@
         <p class="rewardText" id="openingText"></p>
     </div>
 
-    <footer style="position: fixed; bottom: 10px; left: 10px; color: white; font-family: Comic Sans MS, Comic Sans, cursive; text-align: left; line-height: 1;">
-        <p style="margin: 0;">Version v1.02</p>
+    <footer
+        style="position: fixed; bottom: 10px; left: 10px; color: white; font-family: Comic Sans MS, Comic Sans, cursive; text-align: left; line-height: 1;">
+        <p style="margin: 0;">Version v1.10</p>
         <p style="margin: 0;">Site art assets by @SAMMZYO_O</p>
-    </footer>    
+    </footer>
 
     <script>
+        var debtAmount = 0;
+
+        // Function to update debt amount and display it
+        function updateDebt(amount) {
+            debtAmount += amount;
+            document.getElementById('debtAmount').textContent = debtAmount;
+        }
+
+        // Function to create particle animation at the position of debt amount
+        function createParticleAnimation(amount) {
+            var debtCounter = document.getElementById('debtAmount');
+            var position = debtCounter.getBoundingClientRect(); // Get position of debt amount text
+
+            var particle = document.createElement('div');
+            particle.textContent = "-$" + amount;
+            particle.className = 'particle';
+            particle.style.top = position.top + 'px'; // Position particle at top of debt amount text
+            particle.style.left = position.left + 'px'; // Position particle at left of debt amount text
+            document.body.appendChild(particle);
+
+            setTimeout(function () {
+                particle.remove();
+            }, 2000); // Adjust the time as needed for the particle animation
+        }
+
+        function scrollToBottom() {
+            var inventoryContainer = document.getElementById('inventoryContainer');
+            inventoryContainer.scrollTop = inventoryContainer.scrollHeight;
+        }
+
         function openLootBox() {
+            var randomNumber = Math.floor(Math.random() * 25) + 10;
+            updateDebt(randomNumber);
+
+            // Trigger particle animation
+            createParticleAnimation(randomNumber);
             document.getElementById('lootBoxImage').src = "assets/lootboxopened.png";
             document.getElementById('openButton').style.display = "none";
             document.getElementById('openingText').innerText = "Opening...";
@@ -173,67 +247,127 @@
 
             setTimeout(function () {
                 clearInterval(openingInterval);
-                var randomNumber = Math.random();
+                var randomNumber1 = Math.random();
                 var reward;
                 var rewardImage;
 
-                if (randomNumber < 0.03) {
+                if (randomNumber1 < 0.50) {
+                    openingText.innerText = "You got: Nothing!";
+                    rewardImage = "assets/nothing.png"; // Set the rewardImage for "Nothing"
+                    document.getElementById('lootBoxImage').src = rewardImage; // Load the image
+                    document.getElementById('openButton').innerText = "Open Another";
+                    document.getElementById('openButton').style.display = "block";
+                    updateInventory("Nothing"); // Update the inventory for "Nothing"
+                    return; // Exit the function if the first number is over 0.55
+                }
+
+                var randomNumber2 = Math.random();
+
+                if (randomNumber2 < 0.03) {
                     reward = "A Job At McDonald's";
                     rewardImage = "assets/mc.png";
-                } else if (randomNumber < 0.06) {
+                } else if (randomNumber2 < 0.06) {
                     reward = "Salmon";
                     rewardImage = "assets/salmon.png";
-                } else if (randomNumber < 0.09) {
+                } else if (randomNumber2 < 0.09) {
                     reward = "Love";
                     rewardImage = "assets/love.png";
-                } else if (randomNumber < 0.12) {
+                } else if (randomNumber2 < 0.12) {
                     reward = "Happy Panda Massage & Spa";
                     rewardImage = "assets/panda.png";
-                } else if (randomNumber < 0.15) {
+                } else if (randomNumber2 < 0.15) {
                     reward = "IBM ThinkPad 700";
                     rewardImage = "assets/thinkpad.png";
-                } else if (randomNumber < 0.18) {
+                } else if (randomNumber2 < 0.17) {
+                    reward = "Bugbo Plush";
+                    rewardImage = "assets/bugbo.png";
+                } else if (randomNumber2 < 0.18) {
                     reward = "Mint-Condition Brand New Car";
                     rewardImage = "assets/car.png";
-                } else if (randomNumber < 0.21) {
+                } else if (randomNumber2 < 0.21) {
                     reward = "£3";
                     rewardImage = "assets/3quid.png";
-                } else if (randomNumber < 0.24) {
+                } else if (randomNumber2 < 0.24) {
                     reward = "Crazy Aaron's Thinking Putty";
                     rewardImage = "assets/putty.png";
-                } else if (randomNumber < 0.27) {
+                } else if (randomNumber2 < 0.27) {
                     reward = "Huawei WiFi Router";
                     rewardImage = "assets/huawei.png";
-                } else if (randomNumber < 0.30) {
+                } else if (randomNumber2 < 0.30) {
                     reward = "Pink Floyd's The Wall 2xLP";
                     rewardImage = "assets/thewall.png";
-                } else if (randomNumber < 0.33) {
+                } else if (randomNumber2 < 0.33) {
                     reward = "Autechre Exai 4xLP Vinyl Boxset";
                     rewardImage = "assets/exai.png";
-                } else if (randomNumber < 0.36) {
+                } else if (randomNumber2 < 0.36) {
                     reward = "Pim Pimling (Smiling Friends)";
                     rewardImage = "assets/pim.png";
-                } else if (randomNumber < 0.39) {
+                } else if (randomNumber2 < 0.39) {
                     reward = "Chinese SimpleLife Steam Key";
                     rewardImage = "assets/chinese.png";
-                } else if (randomNumber < 0.42) {
+                } else if (randomNumber2 < 0.42) {
                     reward = "Loose Drillbit";
                     rewardImage = "assets/drillbit.png";
-                } else if (randomNumber < 0.45) {
+                } else if (randomNumber2 < 0.45) {
                     reward = "Depressed Red Ball";
                     rewardImage = "assets/red.png";
-                } else if (randomNumber < 0.48) {
+                } else if (randomNumber2 < 0.45) {
+                    reward = "Autechre Confield 2xLP Vinyl";
+                    rewardImage = "assets/confield.png";
+                } else if (randomNumber2 < 0.48) {
                     reward = "Pizza Tower Steam Key";
                     rewardImage = "assets/pizza.png";
-                } else if (randomNumber < 0.51) {
+                } else if (randomNumber2 < 0.51) {
                     reward = "Reese's Cup (Singular)";
                     rewardImage = "assets/reece.png";
-                } else if (randomNumber < 0.54) {
+                } else if (randomNumber2 < 0.54) {
                     reward = "Autechre 12xLP NTS Sessions Vinyl Boxset";
                     rewardImage = "assets/nts.png";
-                } else if (randomNumber < 0.57) {
+                } else if (randomNumber2 < 0.57) {
                     reward = "$5";
                     rewardImage = "assets/fivedollar.png";
+                } else if (randomNumber2 < 0.60) {
+                    reward = "Cat Paw Socks";
+                    rewardImage = "assets/cat.png";
+                } else if (randomNumber2 < 0.63) {
+                    reward = "Charlie Dompler (Smiling Friends)";
+                    rewardImage = "assets/charlie.png";
+                } else if (randomNumber2 < 0.66) {
+                    reward = "Sean Booth (Autechre)";
+                    rewardImage = "assets/sean.png";
+                } else if (randomNumber2 < 0.69) {
+                    reward = "Mint-Condition iPhone 15";
+                    rewardImage = "assets/iphone.png";
+                } else if (randomNumber2 < 0.72) {
+                    reward = "Nothing²";
+                    rewardImage = "assets/nothingsquared.png";
+                } else if (randomNumber2 < 0.75) {
+                    reward = "Stevo";
+                    rewardImage = "assets/stevo.png";
+                } else if (randomNumber2 < 0.78) {
+                    reward = "Dinko Toy";
+                    rewardImage = "assets/dinko.png";
+                } else if (randomNumber2 < 0.81) {
+                    reward = "$15 Subway Gift Card";
+                    rewardImage = "assets/subway.png";
+                } else if (randomNumber2 < 0.84) {
+                    reward = "Red Play-Doh";
+                    rewardImage = "assets/playdoh.png";
+                } else if (randomNumber2 < 0.87) {
+                    reward = "True Love";
+                    rewardImage = "assets/truelove.png";
+                } else if (randomNumber2 < 0.90) {
+                    reward = "Hatred";
+                    rewardImage = "assets/hatred.png";
+                } else if (randomNumber2 < 0.93) {
+                    reward = "Lovely CRT Monitor :-)";
+                    rewardImage = "assets/crt.png";
+                } else if (randomNumber2 < 0.96) {
+                    reward = "AFX - Analogue Bubblebath Vol 3";
+                    rewardImage = "assets/afx.png";
+                } else if (randomNumber2 < 0.98) {
+                    reward = "Rainbow Wriggly Worm";
+                    rewardImage = "assets/worm.png";
                 } else {
                     reward = "Nothing";
                     rewardImage = "assets/nothing.png";
@@ -242,17 +376,29 @@
                 updateInventory(reward);
 
                 document.getElementById('lootBoxImage').src = rewardImage;
-
                 openingText.innerText = "You got: " + reward + "!";
                 document.getElementById('openButton').innerText = "Open Another";
                 document.getElementById('openButton').style.display = "block";
+                scrollToBottom();
             }, 3000);
         }
 
         var allItemsMessageDisplayed = false;
+        var uniqueItems = new Set(); // Initialize a Set to store unique items
+        var inventoryCount = 0;
 
         function updateInventory(item) {
+            if (uniqueItems.size >= 35) {
+                return; // Stop updating inventory if 35 unique items are reached
+            }
+
             var inventoryList = document.getElementById('inventoryList');
+
+            if (!uniqueItems.has(item)) { // Check if the item is unique
+                uniqueItems.add(item); // Add the item to the Set if it's unique
+                inventoryCount++; // Increment the count only for unique items
+            }
+
             var existingItem = document.getElementById('inventoryItem_' + item);
 
             if (existingItem) {
@@ -267,9 +413,12 @@
                 inventoryList.appendChild(newItem);
             }
 
-            if (!allItemsMessageDisplayed && checkAllItemsPresent()) {
+            // Update counter
+            document.getElementById('inventoryCounter').innerText = "(" + inventoryCount + "/35)";
+
+            if (!allItemsMessageDisplayed && uniqueItems.size === 35) {
                 var allItemsText = document.createElement('p');
-                allItemsText.innerHTML = "<strong>You've rolled all 20 items!</strong>";
+                allItemsText.innerHTML = "<strong>You've rolled all 35 items!</strong>";
                 document.getElementById('inventoryContainer').appendChild(allItemsText);
                 allItemsMessageDisplayed = true;
             }
@@ -278,7 +427,7 @@
         function checkAllItemsPresent() {
             var inventoryList = document.getElementById('inventoryList');
             var itemCount = inventoryList.childElementCount;
-            return itemCount >= 20;
+            return itemCount >= 35;
         }
 
     </script>
