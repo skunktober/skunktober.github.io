@@ -123,12 +123,13 @@
             border-radius: 20px;
             cursor: pointer;
             font-family: 'Comic Sans MS';
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
+            /* Added transition property for transform */
             margin-bottom: 5px;
         }
 
         #openButton:hover {
-            background: linear-gradient(225deg, #d45cd600 0%, #E03000 50%, #E03000 50%, #ab2ba600 100%);
+            background: linear-gradient(225deg, #d45cd600 0%, #6100e0 50%, #6100e0 50%, #ab2ba600 100%);
             transform: scale(1.1);
         }
 
@@ -153,7 +154,7 @@
 
         img[src="assets/gambling.png"] {
             position: absolute;
-            max-height: 20%;
+            max-height: 22%;
             top: 0;
             /* Set to 0 to move to the top */
             right: 2%;
@@ -165,6 +166,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="heading-container">
         <img src="assets/gambling.png" alt="Gambling: The Experience">
@@ -189,8 +191,9 @@
 
     <footer
         style="position: fixed; bottom: 10px; left: 10px; color: white; font-family: Comic Sans MS, Comic Sans, cursive; text-align: left; line-height: 1;">
-        <p style="margin: 0;">Version v1.10</p>
-        <p style="margin: 0;">Site art assets by @SAMMZYO_O</p>
+        <p style="margin: 0;">Version v1.11</p>
+        <p style="margin: 0;">Portrait of me by @SAMMZYO_O</p>
+        <p style="margin: 0;">Loot box assets by @IWTFSC</p>
     </footer>
 
     <script>
